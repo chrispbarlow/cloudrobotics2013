@@ -11,13 +11,15 @@
 extern sensors sensorReadings;
 
 extern Bearing movement_G;
+Bearing objectFollower;
+
 /**
  * Initialisation for the object_detection package.
  * This will be called from Tasks_Init by default.
  */
 void object_detection_Init(void)
 {
-	// Initialisation code goes here!
+	objectFollower = Rt;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -27,21 +29,24 @@ void object_detection_Init(void)
  */
 void object_detection_Update(void)
 {
-	if((sensorReadings.IRLeft < sensorReadings.IRRight) && ((sensorReadings.IRLeft < IR_MIN)||(sensorReadings.USFwd < US_MIN)))
+	movement_G = Fd;
+
+	if((sensorReadings.IRLeft-sensorReadings.IRRight > IR_NOISE)||(sensorReadings.IRRight-sensorReadings.IRLeft > IR_NOISE))
 	{
-		movement_G = Rt;
+		if((sensorReadings.IRLeft < sensorReadings.IRRight) && ((sensorReadings.IRLeft < IR_MIN)||(sensorReadings.USFwd < US_MIN)))
+		{
+			movement_G = Rt;
+			objectFollower = Rt;
+		}
+		else if((sensorReadings.IRLeft > sensorReadings.IRRight) && ((sensorReadings.IRLeft < IR_MIN)||(sensorReadings.USFwd < US_MIN)))
+		{
+			movement_G = Lf;
+			objectFollower = Lf;
+		}
 	}
-	else if((sensorReadings.IRLeft > sensorReadings.IRRight) && ((sensorReadings.IRLeft < IR_MIN)||(sensorReadings.USFwd < US_MIN)))
+	else if(sensorReadings.USFwd < US_MIN)
 	{
-		movement_G = Lf;
-	}
-//	else if(sensorReadings.USFwd < US_MIN)
-//	{
-//		movement_G = Rt;
-//	}
-	else
-	{
-		movement_G = Fd;
+		movement_G = objectFollower;
 	}
 
 }

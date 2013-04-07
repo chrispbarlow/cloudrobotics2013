@@ -144,9 +144,9 @@ uint16_t speedControlRight(Bool correctionL, Bool correctionR)
 		Right_motor_speed_G = (CRAWL_SPEED - 0);
 	}
 
-	if(Right_motor_speed_G > (CRAWL_SPEED + 2))
+	if(Right_motor_speed_G > (CRAWL_SPEED + 3))
 	{
-		Right_motor_speed_G = CRAWL_SPEED + 2;
+		Right_motor_speed_G = CRAWL_SPEED + 3;
 	}
 
 	return speed;

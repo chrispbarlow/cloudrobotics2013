@@ -55,10 +55,11 @@
 /*
  * Sensor values
  */
-#define US_MIN (20)
+#define US_MIN (17)
 
-#define IR_MIN (10)
-#define IR_MAX (30)
+#define IR_MIN (15)
+#define IR_MAX (20)
+#define IR_NOISE (18)
 
 
 /* Main high-level system mode */
@@ -113,7 +114,7 @@ Compass Orientation_G;
 
 /*=== Script_Keeper ===*/
 /* Bearing for script_path structure. Stp represents the end of the Script */
-typedef enum {Stp, Fd, Bd, Lf, Rt, DeployLf, DeployRt, Press} Bearing;
+typedef enum {Stp, Fd, Bd, Lf, Rt} Bearing;
 /* Script path structure */
 typedef struct
 	{
