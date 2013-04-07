@@ -20,11 +20,9 @@
 /*= Task Parameters =*/
 /* Global mode */
 extern Mode System_Mode_G;
-extern script_path Script_G;
-extern uint8_t Script_no_G;
-uint8_t Script_no_check_Rt;
 
 /* Motor control values */
+extern Bearing movement_G;
 extern Direction Right_motor_direction_G;
 extern uint16_t Right_motor_speed_G;
 
@@ -38,8 +36,6 @@ extern Bool End_Of_MoveRt;
 /* Internal tracker of Encoder counts */
 int32_t Enc_Rt_Old;
 int32_t Enc_Rt_Diff;
-uint16_t bottleTimeoutRt;
-uint16_t scriptTimeoutRt;
 
 /**
  * Initialisation for the Motor_Right package.
@@ -51,11 +47,6 @@ void Motor_Right_Init(void)
 	Right_motor_direction_G = Off;
 	Right_motor_speed_G = 0;
 	Motor_Rt_Enc_Track = 0;
-	Script_no_check_Rt = 0;
-
-	End_Of_MoveRt = False;
-	bottleTimeoutRt = 0;
-	scriptTimeoutRt = 0;
 
 	GPIO_Set_Direction(LED_Pin_RtFd, GPIO_OUTPUT);
 	GPIO_Write(LED_Pin_RtFd, GPIO_LOW);
@@ -78,125 +69,42 @@ void Motor_Right_Init(void)
  */
 void Motor_Right_Update(void)
 {
-	Bearing moveRt;
-
 	if(System_Mode_G == Go)
 	{
-		moveRt = Fd; //Script_G.Movement[Script_no_G];
-
 		/* Calculate the absolute value of encoder counts since previous update */
 		Enc_Rt_Diff = (WheelCounts_Right_G - Enc_Rt_Old);
 
 		/* Encoder counting */
-		if(moveRt == Fd || moveRt == Lf)
+		if(movement_G == Fd || movement_G == Lf)
 		{
 			Motor_Rt_Enc_Track += Enc_Rt_Diff;
 		}
-		else if(moveRt == Bd || moveRt == Rt)
+		else if(movement_G == Bd || movement_G == Rt)
 		{
 			Motor_Rt_Enc_Track -= Enc_Rt_Diff;
 		}
 
 		Enc_Rt_Old = WheelCounts_Right_G;
 
-//		/* Check to see if the next step in the Script is to be executed */
-//		if(Script_no_check_Rt != Script_no_G)
-//		{
-//			Script_no_check_Rt = Script_no_G;
-//			Motor_Rt_Enc_Track = 0;
-//			scriptTimeoutRt = 0;
-//		}
-//		else
-//		{
-//			Script_no_check_Rt = Script_no_G;
-//			scriptTimeoutRt++;
-//		}
-
-//		if(scriptTimeoutRt > 5000)
-//		{
-//			moveRt = DeployLf;
-//		}
-
-
 		/* Script reader */
-		switch(moveRt)
+		switch(movement_G)
 		{
 		case Fd:
-		case Lf:
-
-			End_Of_MoveRt = False;
 			Right_motor_direction_G = Forwards;
 			speedControlRight(Course_correction_Lf, Course_correction_Rt);
 
-//			/* Check the encoder tracker has reached the target count */
-//			if(Motor_Rt_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT))
-//			{
-//				End_Of_MoveRt = False;
-//				Right_motor_direction_G = Forwards;
-//				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
-//			}
-//			/* Check for overshoot */
-//			else if(Motor_Rt_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
-//			{
-//				End_Of_MoveRt = False;
-//				Right_motor_direction_G = Reverse;
-//				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
-//			}
-//			/* Stop the motor once the target is reached */
-//			else
-//			{
-//				End_Of_MoveRt = True;
-//				Right_motor_speed_G = 0;
-//				bottleTimeoutRt = 0;
-//			}
+		case Lf:
+
+			Right_motor_direction_G = Forwards;
+			Right_motor_speed_G = CRAWL_SPEED;
 			break;
 		case Bd:
 		case Rt:
-			if(
-					Motor_Rt_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT)
-					//&&
-					//(GPIO_Get(Right_SW) != GPIO_LOW)
-				)
-			{
-				End_Of_MoveRt = False;
-				Right_motor_direction_G = Reverse;
-				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
-			}
-			else if(Motor_Rt_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
-			{
-				End_Of_MoveRt = False;
-				Right_motor_direction_G = Forwards;
-				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
-			}
-			else
-			{
-				End_Of_MoveRt = True;
-				Right_motor_speed_G = 0x0;
-				bottleTimeoutRt = 0;
-			}
-			break;
-		case Press:
-			End_Of_MoveRt = False;
 			Right_motor_direction_G = Reverse;
-			Right_motor_speed_G = BOTTLE_SPEED;
-			if(
-					//(Motor_Rt_Enc_Track > Script_G.Enc_counts[Script_no_G])
-					//||
-					(++bottleTimeoutRt > Script_G.Enc_counts[Script_no_G])
-			)
-			{
-				End_Of_MoveRt = True;
-				Right_motor_speed_G = 0x0;
-			}
-			break;
-		case DeployRt:
-		case DeployLf:
-			End_Of_MoveRt = True;
-			Right_motor_speed_G = 0x0;
+			Right_motor_speed_G = CRAWL_SPEED;
 			break;
 		case Stp:
 		default:
-			End_Of_MoveRt = False;
 			Right_motor_speed_G = 0;
 			break;
 		}

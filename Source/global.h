@@ -55,9 +55,11 @@
 /*
  * Sensor values
  */
-#define US_THRESHOLD (16)
-#define US_MIN (0)
-#define IR_THRESHOLD (0x0090)
+#define US_MIN (20)
+
+#define IR_MIN (10)
+#define IR_MAX (30)
+
 
 /* Main high-level system mode */
 typedef enum {Ready, Set, Go, E_Stop, Game_Over} Mode;
@@ -122,7 +124,6 @@ typedef struct
 script_path Script_G;
 uint8_t Script_no_G;
 Bool Script_update;
-Bool End_Of_MoveLf;
 Bool End_Of_MoveRt;
 
 /* Global movement state */

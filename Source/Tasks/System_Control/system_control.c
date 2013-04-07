@@ -19,7 +19,7 @@
 
 Mode System_Mode_G;
 extern Timer Timer_Status;
-extern Compass Orientation_G;
+extern Bearing movement_G;
 extern Team Team_Colour;
 extern Bool Script_update;
 
@@ -48,9 +48,7 @@ void System_Control_Init(void)
 	GPIO_Write(KILL_ALL, GPIO_HIGH);
 
 	/* State and orientation initialisation */
-	System_Mode_G = Go;//Ready;
-	Orientation_G = East;
-	Team_Colour = Red;
+	System_Mode_G = Ready;
 	debounce = 0;
 }
 
@@ -65,37 +63,8 @@ void System_Control_Update(void)
 	{
 	/* Wait for pull cord to determine direction */
 	case Ready:
-		if(
-			((GPIO_Get(Red_Cord_SW) == GPIO_HIGH) && (GPIO_Get(Blue_Cord_SW) == GPIO_HIGH))
-			||
-			((GPIO_Get(Red_Cord_SW) == GPIO_LOW) && (GPIO_Get(Blue_Cord_SW) == GPIO_LOW))
-			)
-		{
-			//GPIO_Write(Ready_Lamp_Rd, GPIO_HIGH);
-			//GPIO_Write(Ready_Lamp_Bl, GPIO_HIGH);
-			//System_Mode_G = E_Stop;
-			debounce = 0;
-		}
-		else if((GPIO_Get(Red_Cord_SW) == GPIO_LOW) && (++debounce > 100))
-		{
-			Orientation_G = West;
-//			GPIO_Write(Ready_Lamp_Rd, GPIO_HIGH);
-			System_Mode_G = Set;
-			Script_no_G = 0;
-			Team_Colour = Red;
-			Script_update = True;
-			debounce = 0;
-		}
-		else if((GPIO_Get(Blue_Cord_SW) == GPIO_LOW) && (++debounce > 100))
-		{
-			Orientation_G = East;
-//			GPIO_Write(Ready_Lamp_Bl, GPIO_HIGH);
-			System_Mode_G = Set;
-			Script_no_G = 0;
-			Team_Colour = Blue;
-			Script_update = True;
-			debounce = 0;
-		}
+		movement_G = Fd;
+		System_Mode_G = Go;
 		break;
 
 	/* Wait for removal of pull cord to "Go" */
@@ -114,12 +83,7 @@ void System_Control_Update(void)
 
 	/* Do nothing */
 	case Go:
-		Orientation_G = West;
 		GPIO_Write(Ready_Lamp_Rd, GPIO_HIGH);
-		//System_Mode_G = Set;
-		Script_no_G = 0;
-		Team_Colour = Red;
-		Script_update = True;
 		debounce = 0;
 		break;
 

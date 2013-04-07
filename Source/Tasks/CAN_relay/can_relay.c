@@ -20,7 +20,6 @@ extern Direction Left_motor_direction_G;
 extern uint16_t Left_motor_speed_G;
 extern Direction Right_motor_direction_G;
 extern uint16_t Right_motor_speed_G;
-extern Bool Opponent_detected;
 
 /* Check the System Mode */
 extern Mode System_Mode_G;
