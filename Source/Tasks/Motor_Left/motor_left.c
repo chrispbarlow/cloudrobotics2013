@@ -148,7 +148,7 @@ uint16_t rampDownLeft(int32_t scriptCount, int32_t currentCount, Bool correction
 
 	if(correction == True && speed > CORRECTION_THRESHOLD)
 	{
-		speed -= CORRECTION_VALUE;
+		speed -= 1;
 	}
 
 	if (speed <= CRAWL_SPEED)
@@ -194,7 +194,7 @@ void visualsLf(void)
 		GPIO_Write(LED_Pin_LfBd, GPIO_LOW);
 	}
 
-	Segment_Write(displayC, (Motor_Lf_Enc_Track & 0x000F) >> 0);
-	Segment_Write(displayD, (Motor_Lf_Enc_Track & 0x00F0) >> 4);
+//	Segment_Write(displayC, (Motor_Lf_Enc_Track & 0x000F) >> 0);
+//	Segment_Write(displayD, (Motor_Lf_Enc_Track & 0x00F0) >> 4);
 
 }

@@ -31,7 +31,8 @@
  * RAMP_DOWN_GAIN controls the rate of deceleration when ramping down the motor speeds.
  */
 #define RPM_LIMIT (20)
-#define CORRECTION_VALUE (4)
+#define CORRECTION_VALUE_UPPER (2)
+#define CORRECTION_VALUE_LOWER (0)
 #define CORRECTION_THRESHOLD (24)
 #define CRAWL_SPEED (12)
 #define BOTTLE_SPEED (24)
@@ -55,11 +56,11 @@
 /*
  * Sensor values
  */
-#define US_MIN (17)
+#define US_MIN (30)
 
-#define IR_MIN (15)
-#define IR_MAX (20)
-#define IR_NOISE (18)
+#define IR_MIN (20)
+#define IR_MAX (28)
+#define IR_NOISE (2)
 
 
 /* Main high-level system mode */

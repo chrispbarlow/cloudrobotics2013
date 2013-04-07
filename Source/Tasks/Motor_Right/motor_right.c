@@ -21,6 +21,9 @@
 /* Global mode */
 extern Mode System_Mode_G;
 
+extern sensors sensorReadings;
+
+
 /* Motor control values */
 extern Bearing movement_G;
 extern Direction Right_motor_direction_G;
@@ -92,9 +95,8 @@ void Motor_Right_Update(void)
 		case Fd:
 			Right_motor_direction_G = Forwards;
 			speedControlRight(Course_correction_Lf, Course_correction_Rt);
-
+			break;
 		case Lf:
-
 			Right_motor_direction_G = Forwards;
 			Right_motor_speed_G = CRAWL_SPEED;
 			break;
@@ -139,14 +141,14 @@ uint16_t speedControlRight(Bool correctionL, Bool correctionR)
 		Right_motor_speed_G--;
 	}
 
-	if(Right_motor_speed_G < (CRAWL_SPEED - 0))
+	if(Right_motor_speed_G < (CRAWL_SPEED - CORRECTION_VALUE_LOWER))
 	{
-		Right_motor_speed_G = (CRAWL_SPEED - 0);
+		Right_motor_speed_G = (CRAWL_SPEED - CORRECTION_VALUE_LOWER);
 	}
 
-	if(Right_motor_speed_G > (CRAWL_SPEED + 3))
+	if(Right_motor_speed_G > (CRAWL_SPEED + CORRECTION_VALUE_UPPER))
 	{
-		Right_motor_speed_G = CRAWL_SPEED + 3;
+		Right_motor_speed_G = CRAWL_SPEED + CORRECTION_VALUE_UPPER;
 	}
 
 	return speed;
@@ -181,7 +183,7 @@ uint16_t rampDownRight(int32_t scriptCount, int32_t currentCount, Bool correctio
 
 	if(correction == True && speed > CORRECTION_THRESHOLD)
 	{
-		speed -= CORRECTION_VALUE;
+		speed -= 1;
 	}
 
 	if (speed <= CRAWL_SPEED)
@@ -227,6 +229,13 @@ void visualsRt(void)
 		GPIO_Write(LED_Pin_RtBd, GPIO_LOW);
 	}
 
-	Segment_Write(displayA, (Right_motor_speed_G & 0x000F) >> 0);
-	Segment_Write(displayB, (Right_motor_speed_G & 0x00F0) >> 4);
+//	Segment_Write(displayA, (sensorReadings.USFwd & 0x000F) >> 0);
+//	Segment_Write(displayB, (sensorReadings.USFwd & 0x00F0) >> 4);
+//	Segment_Write(displayC, (sensorReadings.USFwd & 0x0F00) >> 8);
+
+	Segment_Write(displayA, (sensorReadings.IRRight & 0x000F) >> 0);
+	Segment_Write(displayB, (sensorReadings.IRRight & 0x00F0) >> 4);
+	Segment_Write(displayC, (sensorReadings.IRLeft & 0x000F) >> 0);
+	Segment_Write(displayD, (sensorReadings.IRLeft & 0x00F0) >> 4);
+
 }
