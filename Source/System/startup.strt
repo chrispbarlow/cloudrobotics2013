@@ -1,0 +1,644 @@
+
+/**********************************************
+    GENERATED ON EACH BUILD - DO NOT MODIFY!
+ **********************************************/
+
+
+
+/* Specify required stack sizes (for each mode) */
+/* Top of the stack is the top of RAM, or RAM base (0x40000000) added
+   to the RAM size, which is 16 kb (=0x4000) for this device. */
+   .equ    Top_Stack, 0x40004000
+
+ 	/* Sizes of the different stack regions (in bytes) */
+   .equ    IRQ_Stk, 512
+   .equ    USR_Stk, 2048
+
+   /* Stack pointer base addresses */
+   .equ    IRQ_Stk_Base_Val, (Top_Stack)
+   .equ    USR_Stk_Base_Val, (Top_Stack -IRQ_Stk)
+
+   .section .startup
+
+   .extern main
+   .extern _bss
+   .extern _data
+   .extern _edata
+   .extern _etext
+   .extern _text
+   .extern _stext
+   .extern _etext
+   .extern _ebss
+   .extern Handle_Interrupts
+
+   .set noreorder
+		nop
+        j _startup            # Reset vector
+        nop
+
+        j Handler            # Interrupt vector
+        nop
+
+   .func   _startup
+_startup:                     # Start of code section
+/* Set global pointer register */
+        la $28, _gp
+
+/* Set the stack pointer */
+        la $t0, USR_Stk_Base_Val
+        move $sp, $t0
+
+        mtc0 $sp, $25         # Save CP0 Status Reg
+
+/* Fill the stack */
+        la $3, Top_Stack - 4
+        la $4, Top_Stack -IRQ_Stk -USR_Stk
+        la $5, 0xDEC0ADDE
+Stk_fill:
+		sw $5, 0($4)
+		slt $2, $4, $3
+		bnez $2, Stk_fill
+		addiu $4, $4, 4
+/* End of stack-filler */
+
+		/* Special value at the bottom of the interrupt stack */
+		la $4, Top_Stack -IRQ_Stk
+		la $5, INT_Stk_Val
+		lw $5, 0($5)
+		nop
+		sw $5, 0($4)
+
+		/* Special value at the bottom of the user stack */
+		la $4, Top_Stack -IRQ_Stk -USR_Stk
+		la $5, USR_Stk_Val
+		lw $5, 0($5)
+		nop
+		sw $5, 0($4)
+
+        la $4, _etext
+        la $5, _text
+        subu $4, $4, $5
+        la $5, _edata
+        la $6, _data
+Data_copy:
+        lw $2, 0($4)
+        nop
+        slt $3, $6, $5
+        sw $2, 0($6)
+        addiu $6, $6, 4
+        bnez  $3, Data_copy
+        addiu $4, $4, 4
+
+/* Clear .bss section (Zero init) */
+        la $4, _bss   # Clear BSS Segment
+        la $5, _ebss  # Clear BSS Segment
+BSS_clear:
+        sw  $0, 0($4)
+        slt $3, $4, $5
+        bnez  $3, BSS_clear
+        addiu $4, $4, 4
+
+        la $4, _stext
+        la $5, _etext
+        la $6, _text
+Code_copy:
+        lw $2, 0($4)
+        nop
+        slt $3, $6, $5
+        sw $2, 0($6)
+        addiu $6, $6, 4
+        bnez  $3, Code_copy
+        addiu $4, $4, 4
+
+
+/* Enable system interrupts */
+        mfc0 $4, $12         # Read CP0 Status Reg
+        nop
+        ori $4, $4, 0x700    # Set IE and IRQ = 7
+        nop
+        mtc0 $4, $12         # Save CP0 Status Reg
+        nop
+        
+        la $4, 0xFF00
+        nop
+        mtc0 $4, $13
+
+/* Enable the FPU */
+#ifdef FPU
+		la $t0, _init_fpu
+        jalr $t0
+		nop
+#endif
+
+/* Finally, start running the C code - branch to main() */
+		la $t0, main
+        jalr $t0        # Call main()
+        nop
+
+	.global _exit
+_exit:                  # Halt if main returns
+        b   _exit
+
+        .size   _startup, . - _startup
+        .endfunc
+
+	.section .data.USR_Stk_Off
+	.global USR_Stk_Off
+USR_Stk_Off:	.word	0
+
+	.section .data.INT_Stk_Off
+	.global INT_Stk_Off
+INT_Stk_Off:	.word	USR_Stk / 4
+
+	.section .data.USR_Stk_Val
+	.global USR_Stk_Val
+USR_Stk_Val:	.word	0xDEADBEAF
+
+	.section .data.INT_Stk_Val
+	.global INT_Stk_Val
+INT_Stk_Val:	.word	0xDECAFBAD
+
+#----------------------------------------------------------------
+# Exception vector table
+#----------------------------------------------------------------
+	.section .data.TableBase
+	.globl TableBase
+TableBase:
+	.word Excpt_Unused  	/* 0  Interrupt */
+	.word Excpt_Unused		/* 1  TLB modification (Unused) */
+	.word Excpt_Unused		/* 2  TLB - load or instruction fetch (Unused) */
+	.word Excpt_Unused		/* 3  TLB - store (Unused) */
+	.word Excpt_IAbort		/* 4  Address error - load and instruction fetch */
+	.word Excpt_DAbort		/* 5  Address error - store */
+	.word Excpt_Unused		/* 6  Bus error - instruction fetch (Unused) */
+	.word Excpt_Unused		/* 7  Bus error - load or store (Unused) */
+	.word Excpt_Syscall		/* 8  Syscall */
+	.word Excpt_Break		/* 9  Breakpoint */
+	.word Excpt_UndefInst	/* 10 Undefined Instruction */
+	.word Excpt_CoPro		/* 11 Coprocessor unusable */
+	.word Excpt_Overflow	/* 12 Arithmetic Overflow */
+	.word Excpt_Unused		/* 13 Unused */
+	.word Excpt_Unused		/* 14 Unused */
+	.word Excpt_Unused		/* 15 Floating-Point Exception */
+
+	.text
+
+#----------------------------------------------------------------
+# Generic handler routine
+#----------------------------------------------------------------
+        .globl Handler
+        .section .text.Handler
+        .ent Handler
+        .set noat
+        .set noreorder
+Handler:
+        mfc0   $26, $13			# Read CP0 Cause register
+		nop
+		and    $27, $26, 0x3f
+		la	   $26, TableBase
+		addu   $26, $26, $27
+		lw     $27, 0($26)
+		nop
+		j	   $27
+        nop
+        .end Handler
+
+      .globl End_Handler
+      .ent End_Handler
+End_Handler:
+ 		mfc0   $26,$14         # Read CP0 EPC return address Reg
+        nop
+        j      $26             # Return from handler
+        rfe
+        .set reorder
+        .set at
+        .end End_Handler
+
+#----------------------------------------------------------------
+# Exception handlers
+#----------------------------------------------------------------
+	.set noreorder
+	.set noat
+
+	.globl Excpt_Unused
+Excpt_Unused:
+        j    Excpt_Unused 	# Loop
+        nop
+
+	.globl Excpt_IAbort
+Excpt_IAbort:
+		mfc0   $26,$14         # Read CP0 EPC return address Reg
+        j    Excpt_IAbort 	   # Loop
+        nop
+
+	.globl Excpt_DAbort
+Excpt_DAbort:
+        j    Excpt_DAbort 	   # Loop
+        nop
+
+	.globl Excpt_Syscall
+Excpt_Syscall:
+        j    Excpt_Syscall 	   # Loop
+        nop
+
+	.globl Excpt_UndefInst
+Excpt_UndefInst:
+        j    Excpt_UndefInst   # Loop
+        nop
+
+	.globl Excpt_Overflow
+Excpt_Overflow:
+        j    Excpt_Overflow	   # Loop
+        nop
+
+	.globl Excpt_CoPro
+Excpt_CoPro:
+        j    Excpt_CoPro	   # Loop
+        nop
+
+	.globl Excpt_Break
+Excpt_Break:
+        j    Excpt_Break	   # Loop
+        nop
+
+    .set reorder
+    .set at
+
+#----------------------------------------------------------------
+# Interrupt Handler
+#----------------------------------------------------------------
+		.globl End_IRQ_Ptr
+		.section .text.InterruptHandler
+        .globl InterruptHandler
+        .ent InterruptHandler
+        .set noat
+        .set noreorder
+InterruptHandler:
+		/* Temporarily store the User Stack Pointer */
+		move $k1, $sp
+
+		/* Load the IRQ Stack Pointer */
+		la $k0, IRQ_Stk_Base_Val
+		move $sp, $k0
+
+		/* Allocate stack space */
+#ifndef FPU
+		subu $sp, 120
+#else
+		subu $sp, 252
+#endif
+
+		/* Save all the key general purpose registers */
+		sw $ra,   4($sp)
+        sw $t9,   8($sp)
+        sw $t8,  12($sp)
+        sw $s7,  16($sp)
+        sw $s6,  20($sp)
+        sw $s5,  24($sp)
+        sw $s4,  28($sp)
+        sw $s3,  32($sp)
+        sw $s2,  36($sp)
+        sw $s1,  40($sp)
+        sw $s0,  44($sp)
+        sw $t7,  48($sp)
+        sw $t6,  52($sp)
+        sw $t5,  56($sp)
+        sw $t4,  60($sp)
+        sw $t3,  64($sp)
+        sw $t2,  68($sp)
+        sw $t1,  72($sp)
+        sw $t0,  76($sp)
+        sw $a3,  80($sp)
+        sw $a2,  84($sp)
+        sw $a1,  88($sp)
+        sw $a0,  92($sp)
+        sw $v1,  96($sp)
+        sw $v0, 100($sp)
+        sw $at, 104($sp)
+        sw $k1, 108($sp)
+
+#ifdef FPU
+		cfc1 $t1, $31
+		swc1 $f0, 112($sp)
+		swc1 $f1, 116($sp)
+		swc1 $f2, 120($sp)
+		swc1 $f3, 124($sp)
+		swc1 $f4, 128($sp)
+		swc1 $f5, 132($sp)
+		swc1 $f6, 136($sp)
+		swc1 $f7, 140($sp)
+		swc1 $f8, 144($sp)
+		swc1 $f9, 148($sp)
+		swc1 $f10, 152($sp)
+		swc1 $f11, 156($sp)
+		swc1 $f12, 160($sp)
+		swc1 $f13, 164($sp)
+		swc1 $f14, 168($sp)
+		swc1 $f15, 172($sp)
+		swc1 $f16, 176($sp)
+		swc1 $f17, 180($sp)
+		swc1 $f18, 184($sp)
+		swc1 $f19, 188($sp)
+		swc1 $f20, 192($sp)
+		swc1 $f21, 196($sp)
+		swc1 $f22, 200($sp)
+		swc1 $f23, 204($sp)
+		swc1 $f24, 208($sp)
+		swc1 $f25, 212($sp)
+		swc1 $f26, 216($sp)
+		swc1 $f27, 220($sp)
+		swc1 $f28, 224($sp)
+		swc1 $f29, 228($sp)
+		swc1 $f30, 232($sp)
+		swc1 $f31, 236($sp)
+		sw $t1, 240($sp)
+#endif
+
+        /* Get the Return Address (EPC) */
+        mfc0 $k0, $14
+
+		/* Store the stack frame */
+#ifndef FPU
+		sw $fp, 112($sp)
+		sw $k0, 116($sp)
+#else
+		sw $fp, 244($sp)
+		sw $k0, 248($sp)
+#endif
+		move $fp,$sp
+
+		/* Clear pending interrupts */
+		mfc0 $26,$13
+        nop
+        li   $26,0xFF00
+        mtc0 $26,$13
+
+ 		subu $sp, 24
+
+		/* Call C handler */
+ 		jal   Handle_Interrupts
+        nop
+
+        addu $sp, 24
+
+#ifdef FPU
+        lw $t0, 240($sp)
+        lwc1 $f0, 112($sp)
+		lwc1 $f1, 116($sp)
+		lwc1 $f2, 120($sp)
+		lwc1 $f3, 124($sp)
+		lwc1 $f4, 128($sp)
+		lwc1 $f5, 132($sp)
+		lwc1 $f6, 136($sp)
+		lwc1 $f7, 140($sp)
+		lwc1 $f8, 144($sp)
+		lwc1 $f9, 148($sp)
+		lwc1 $f10, 152($sp)
+		lwc1 $f11, 156($sp)
+		lwc1 $f12, 160($sp)
+		lwc1 $f13, 164($sp)
+		lwc1 $f14, 168($sp)
+		lwc1 $f15, 172($sp)
+		lwc1 $f16, 176($sp)
+		lwc1 $f17, 180($sp)
+		lwc1 $f18, 184($sp)
+		lwc1 $f19, 188($sp)
+		lwc1 $f20, 192($sp)
+		lwc1 $f21, 196($sp)
+		lwc1 $f22, 200($sp)
+		lwc1 $f23, 204($sp)
+		lwc1 $f24, 208($sp)
+		lwc1 $f25, 212($sp)
+		lwc1 $f26, 216($sp)
+		lwc1 $f27, 220($sp)
+		lwc1 $f28, 224($sp)
+		lwc1 $f29, 228($sp)
+		lwc1 $f30, 232($sp)
+		lwc1 $f31, 236($sp)
+		ctc1 $t0, $31
+#endif
+
+		/* Restore all the key general purpose registers */
+		lw $ra,   4($sp)
+        lw $t9,   8($sp)
+        lw $t8,  12($sp)
+        lw $s7,  16($sp)
+        lw $s6,  20($sp)
+        lw $s5,  24($sp)
+        lw $s4,  28($sp)
+        lw $s3,  32($sp)
+        lw $s2,  36($sp)
+        lw $s1,  40($sp)
+        lw $s0,  44($sp)
+        lw $t7,  48($sp)
+        lw $t6,  52($sp)
+        lw $t5,  56($sp)
+        lw $t4,  60($sp)
+        lw $t3,  64($sp)
+        lw $t2,  68($sp)
+        lw $t1,  72($sp)
+        lw $t0,  76($sp)
+        lw $a3,  80($sp)
+        lw $a2,  84($sp)
+        lw $a1,  88($sp)
+        lw $a0,  92($sp)
+        lw $v1,  96($sp)
+        lw $v0, 100($sp)
+        lw $at, 104($sp)
+        lw $k0, 108($sp)
+
+#ifndef FPU
+		/* Restore the stack frame */
+		lw	$fp,112($sp)
+
+        /* Get the Return Address (EPC) */
+        lw $k1, 116($sp)
+        
+        /* Restore the stack pointer */
+        addu $sp, 120
+#else
+		/* Restore the stack frame */
+		lw	$fp,244($sp)
+
+        /* Get the Return Address (EPC) */
+        lw $k1, 248($sp)
+
+        /* Restore the stack pointer */
+        addu $sp, 252
+#endif
+        /* Load the User Stack Pointer */
+        move $sp, $k0
+
+        /* Return from interrupt */
+        j  $k1
+End_IRQ_Ptr:
+        rfe
+       .set reorder
+       .end InterruptHandler
+       .set at
+
+
+#----------------------------------------------------------------
+# Enable Interrupt Function
+#----------------------------------------------------------------
+	.section .text.Enable_Interrupts
+	.global Enable_Interrupts
+	.ent Enable_Interrupts
+
+        .set noreorder
+Enable_Interrupts:
+        addiu   $29, $29, -24
+        .frame $29, 24, $31
+        sw   $8, 4($29)
+
+        mfc0   $8, $12
+        nop
+        ori   $8, $8, 0x01
+        nop
+        mtc0   $8, $12
+        nop
+
+        lw   $8, 4($29)
+        addiu   $29, $29, 24
+        jr   $31
+        nop
+        .set reorder
+        .end Enable_Interrupts
+
+#----------------------------------------------------------------
+# Disable Interrupt Function
+#----------------------------------------------------------------
+	.section .text.Disable_Interrupts
+	.global Disable_Interrupts
+	.ent Disable_Interrupts
+
+    	.set noreorder
+Disable_Interrupts:
+        addiu   $29, $29, -24
+        .frame $29, 24, $31
+        sw   $8, 4($29)
+
+        mfc0    $8, $12
+        lui     $9, 0xFFFF
+        ori     $9, 0xFFFE
+        nop
+        and     $8, $8, $9
+        nop
+        mtc0   $8, $12
+        nop
+
+        lw   $8, 4($29)
+        addiu   $29, $29, 24
+        jr   $31
+        nop
+        .set reorder
+        .end Disable_Interrupts
+
+#----------------------------------------------------------------
+# Enter_Sleep_Mode Function
+#----------------------------------------------------------------
+	.section .text.Enter_Sleep_Mode
+	.global Enter_Sleep_Mode
+	.global Sleep_Ptr
+	.ent Enter_Sleep_Mode
+
+    	.set noreorder
+Enter_Sleep_Mode:
+        addiu   $29, $29, -24
+        .frame $29, 24, $31
+        sw   $8, 4($29)
+
+        mfc0   $8, $16
+        ori    $8, $8, 1
+Sleep_Ptr:
+        mtc0   $8, $16
+        nop
+
+        lw   $8, 4($29)
+        addiu   $29, $29, 24
+        jr   $31
+        nop
+        .set reorder
+        .end Enter_Sleep_Mode
+
+#----------------------------------------------------------------
+# LOG_Trigger_Breakpoint Function
+#----------------------------------------------------------------
+	.section .text.LOG_Trigger_Breakpoint
+	.global LOG_Trigger_Breakpoint
+	.ent LOG_Trigger_Breakpoint
+	
+LOG_Trigger_Breakpoint:
+	jr $31
+	.end LOG_Trigger_Breakpoint
+
+#----------------------------------------------------------------
+# _init_fpu Function
+#----------------------------------------------------------------
+#ifdef FPU
+	.section .text._init_fpu
+	.global _init_fpu
+	.ent _init_fpu
+
+_init_fpu:
+	mfc0	$t0, $12
+	lui		$t1, 0x2000
+	or		$t0, $t1
+	nop
+	mtc0	$t0, $12
+
+	nop
+	li		$t1, 0x00000000
+	ctc1	$t1, $31
+
+	li		$t0, -1
+
+	mtc1	$t0, $f0
+	mtc1	$t0, $f1
+	mtc1	$t0, $f2
+	mtc1	$t0, $f3
+	mtc1	$t0, $f4
+	mtc1	$t0, $f5
+	mtc1	$t0, $f6
+	mtc1	$t0, $f7
+	mtc1	$t0, $f8
+	mtc1	$t0, $f9
+	mtc1	$t0, $f10
+	mtc1	$t0, $f11
+	mtc1	$t0, $f12
+	mtc1	$t0, $f13
+	mtc1	$t0, $f14
+	mtc1	$t0, $f15
+	mtc1	$t0, $f16
+	mtc1	$t0, $f17
+	mtc1	$t0, $f18
+	mtc1	$t0, $f19
+	mtc1	$t0, $f20
+	mtc1	$t0, $f21
+	mtc1	$t0, $f22
+	mtc1	$t0, $f23
+	mtc1	$t0, $f24
+	mtc1	$t0, $f25
+	mtc1	$t0, $f26
+	mtc1	$t0, $f27
+	mtc1	$t0, $f28
+	mtc1	$t0, $f29
+	mtc1	$t0, $f30
+	mtc1	$t0, $f31
+	jr		$ra
+	.end _init_fpu
+#endif
+
+	.section .stack.Stack_G
+	.global Stack_G
+
+Stack_G:
+/* The actual system stack, used to give the stack a presence in the linker
+   script.  As a consequence, any overflow of the global data sections into
+   the stack section will be detected by the linker (assuming that there is
+   no dynamic memory allocation). */
+		.space (2048 + 512)
+
+/*------------------------------------------------------------------*-
+  ---- END OF FILE -------------------------------------------------
+-*------------------------------------------------------------------*/
