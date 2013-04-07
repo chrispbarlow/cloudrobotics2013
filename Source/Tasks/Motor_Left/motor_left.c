@@ -81,7 +81,7 @@ void Motor_Left_Update(void)
 
 	if(System_Mode_G == Go)
 	{
-		moveLf = Script_G.Movement[Script_no_G];
+		moveLf = Fd ;//Script_G.Movement[Script_no_G]; /*TODO: this will be controlled by a global var */
 
 		/* Calculate the absolute value of encoder counts since previous update */
 		Enc_Lf_Diff = (WheelCounts_Left_G - Enc_Lf_Old);
@@ -97,24 +97,24 @@ void Motor_Left_Update(void)
 		}
 
 		Enc_Lf_Old = WheelCounts_Left_G;
-
-		/* Check to see if the next step in the Script is to be executed */
-		if(Script_no_check_Lf != Script_no_G)
-		{
-			Script_no_check_Lf = Script_no_G;
-			Motor_Lf_Enc_Track = 0;
-			scriptTimeoutLf = 0;
-		}
-		else
-		{
-			Script_no_check_Lf = Script_no_G;
-			scriptTimeoutLf++;
-		}
-
-		if(scriptTimeoutLf > 5000)
-		{
-			moveLf = DeployLf;
-		}
+//
+//		/* Check to see if the next step in the Script is to be executed */
+//		if(Script_no_check_Lf != Script_no_G)
+//		{
+//			Script_no_check_Lf = Script_no_G;
+//			Motor_Lf_Enc_Track = 0;
+//			scriptTimeoutLf = 0;
+//		}
+//		else
+//		{
+//			Script_no_check_Lf = Script_no_G;
+//			scriptTimeoutLf++;
+//		}
+//
+//		if(scriptTimeoutLf > 5000)
+//		{
+//			moveLf = DeployLf;
+//		}
 
 		/* Script reader */
 		switch(moveLf)
@@ -122,51 +122,59 @@ void Motor_Left_Update(void)
 		case Fd:
 		case Rt:
 			/* Check the encoder tracker has reached the target count */
-			if(Motor_Lf_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT))
-			{
-				End_Of_MoveLf = False;
-				Left_motor_direction_G = Forwards;
-				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
-			}
-			/* Check for overshoot */
-			else if(Motor_Lf_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
-			{
-				End_Of_MoveLf = False;
-				Left_motor_direction_G = Reverse;
-				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
-			}
-			/* Stop the motor once the target is reached */
-			else
-			{
-				End_Of_MoveLf = True;
-				Left_motor_speed_G = 0x0;
-				bottleTimeoutLf = 0;
-			}
+			End_Of_MoveLf = False;
+			Left_motor_direction_G = Forwards;
+			Left_motor_speed_G = CRAWL_SPEED;
+
+//			if(Motor_Lf_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT))
+//			{
+//				End_Of_MoveLf = False;
+//				Left_motor_direction_G = Forwards;
+//				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
+//			}
+//			/* Check for overshoot */
+//			else if(Motor_Lf_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
+//			{
+//				End_Of_MoveLf = False;
+//				Left_motor_direction_G = Reverse;
+//				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
+//			}
+//			/* Stop the motor once the target is reached */
+//			else
+//			{
+//				End_Of_MoveLf = True;
+//				Left_motor_speed_G = 0x0;
+//				bottleTimeoutLf = 0;
+//			}
 			break;
 		case Bd:
 		case Lf:
-			if(
-					(Motor_Lf_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT))
-					//&&
-					//(GPIO_Get(Left_SW) != GPIO_LOW)
-			)
-			{
-				End_Of_MoveLf = False;
-				Left_motor_direction_G = Reverse;
-				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
-			}
-			else if(Motor_Lf_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
-			{
-				End_Of_MoveLf = False;
-				Left_motor_direction_G = Forwards;
-				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
-			}
-			else // TODO: Timeout vs. buffer?
-			{
-				End_Of_MoveLf = True;
-				Left_motor_speed_G = 0x0;
-				bottleTimeoutLf = 0;
-			}
+			End_Of_MoveLf = False;
+			Left_motor_direction_G = Reverse;
+			Left_motor_speed_G = RPM_LIMIT;
+
+//			if(
+//					(Motor_Lf_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT))
+//					//&&
+//					//(GPIO_Get(Left_SW) != GPIO_LOW)
+//			)
+//			{
+//				End_Of_MoveLf = False;
+//				Left_motor_direction_G = Reverse;
+//				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
+//			}
+//			else if(Motor_Lf_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
+//			{
+//				End_Of_MoveLf = False;
+//				Left_motor_direction_G = Forwards;
+//				Left_motor_speed_G = rampDownLeft(Script_G.Enc_counts[Script_no_G], Motor_Lf_Enc_Track, Course_correction_Lf);
+//			}
+//			else // TODO: Timeout vs. buffer?
+//			{
+//				End_Of_MoveLf = True;
+//				Left_motor_speed_G = 0x0;
+//				bottleTimeoutLf = 0;
+//			}
 			break;
 		case Press:
 			End_Of_MoveLf = False;
@@ -271,10 +279,7 @@ void visualsLf(void)
 		GPIO_Write(LED_Pin_LfFd, GPIO_LOW);
 	}
 
-	if(
-		Left_motor_direction_G == Reverse
-		&& Left_motor_speed_G != 0
-		)
+	if((Left_motor_direction_G == Reverse && Left_motor_speed_G != 0	) || (Course_correction_Lf == True))
 	{
 		GPIO_Write(LED_Pin_LfBd, GPIO_HIGH);
 	}
@@ -283,7 +288,7 @@ void visualsLf(void)
 		GPIO_Write(LED_Pin_LfBd, GPIO_LOW);
 	}
 
-	//Segment_Write(displayC, (Motor_Lf_Enc_Track & 0x000F) >> 0);
-	//Segment_Write(displayD, (Motor_Lf_Enc_Track & 0x00F0) >> 4);
+	Segment_Write(displayC, (Motor_Lf_Enc_Track & 0x000F) >> 0);
+	Segment_Write(displayD, (Motor_Lf_Enc_Track & 0x00F0) >> 4);
 
 }

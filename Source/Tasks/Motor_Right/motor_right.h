@@ -18,6 +18,7 @@ void Motor_Right_Init(void);
  * DUMMY_TASK_VARIABLE_EXECUTION_TIMES to alter this behaviour.
  */
 void Motor_Right_Update(void);
+uint16_t speedControlRight(Bool correctionL, Bool correctionR);
 uint16_t rampDownRight(int32_t, int32_t, Bool);
 void visualsRt(void);
 

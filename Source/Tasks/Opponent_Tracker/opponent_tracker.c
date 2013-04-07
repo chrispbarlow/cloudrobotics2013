@@ -50,17 +50,10 @@ void Opponent_Tracker_Update(void)
 	uint32_t reversible;
 
 	/* Check to see messages received from forward Proximity sensor */
-	if(
-			(
-					(sensorReadings.USFwd < US_THRESHOLD)
-					&&
-					(sensorReadings.USFwd > US_MIN)
-			)
-			||
-			(sensorReadings.IRLeft > IR_THRESHOLD)
-			||
-			(sensorReadings.IRRight > IR_THRESHOLD)
-		)
+	if(((sensorReadings.USFwd < US_THRESHOLD)
+			&& (sensorReadings.USFwd > US_MIN))
+			||(sensorReadings.IRLeft > IR_THRESHOLD)
+			||(sensorReadings.IRRight > IR_THRESHOLD))
 	{
 		switch(Script_G.Movement[Script_no_G])
 		{
@@ -73,15 +66,7 @@ void Opponent_Tracker_Update(void)
 			Opponent_detected = False;
 			break;
 		case Bd:
-			if(
-					(
-							(sensorReadings.IRLeft > IR_THRESHOLD)
-							||
-							(sensorReadings.IRRight > IR_THRESHOLD)
-					)
-					//&&
-					//(++sensorDebounce > 3)
-			)
+			if(((sensorReadings.IRLeft > IR_THRESHOLD)||(sensorReadings.IRRight > IR_THRESHOLD)))
 			{
 				Left_motor_direction_G = Off;
 				Right_motor_direction_G = Off;
@@ -94,13 +79,7 @@ void Opponent_Tracker_Update(void)
 			}
 			break;
 		case Fd:
-			if(
-					(sensorReadings.USFwd < US_THRESHOLD)
-					&&
-					(sensorReadings.USFwd > US_MIN)
-					//&&
-					//(++sensorDebounce > 3)
-			)
+			if((sensorReadings.USFwd < US_THRESHOLD) && (sensorReadings.USFwd > US_MIN))
 			{
 				Left_motor_direction_G = Off;
 				Right_motor_direction_G = Off;

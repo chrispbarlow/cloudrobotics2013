@@ -30,7 +30,7 @@
  * CRAWL_SPEED is the lowest motor speed that is able to move the robot
  * RAMP_DOWN_GAIN controls the rate of deceleration when ramping down the motor speeds.
  */
-#define RPM_LIMIT (48)
+#define RPM_LIMIT (20)
 #define CORRECTION_VALUE (4)
 #define CORRECTION_THRESHOLD (24)
 #define CRAWL_SPEED (12)
@@ -49,7 +49,7 @@
 #define TURN_ENC_COUNT (211)
 #define ACC_COUNT (90)
 #define BUFFER_COUNT (2)
-#define COURSE_CORRECTION_BUFFER (3)
+#define COURSE_CORRECTION_BUFFER (1)
 #define BOTTLE_TIMEOUT (5000)
 
 /*
@@ -124,6 +124,10 @@ uint8_t Script_no_G;
 Bool Script_update;
 Bool End_Of_MoveLf;
 Bool End_Of_MoveRt;
+
+/* Global movement state */
+
+Bearing movement_G;
 
 /* Motor counter tracker */
 int32_t Motor_Lf_Enc_Track;

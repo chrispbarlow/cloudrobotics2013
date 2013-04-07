@@ -1,4 +1,4 @@
-#Fri May 04 11:44:32 BST 2012
+#Sun Apr 07 14:59:07 BST 2013
 build/linker/bss/location=memoryregions.data
 build/linker/code/location=memoryregions.code
 build/linker/data/location=memoryregions.data
@@ -71,3 +71,12 @@ scheduler/task/System_timer_Update/jitter=60
 scheduler/task/Turning_Monitor_Update/affinity=0
 scheduler/task/Turning_Monitor_Update/deadline=25000
 scheduler/task/Turning_Monitor_Update/jitter=800
+scheduler/task/object_detection_Update/affinity=0
+scheduler/task/object_detection_Update/deadline=150000
+scheduler/task/object_detection_Update/jitter=150000
+wcet/filter=
+wcet/hash=ff9a599e02bcd32c0e70a6de5d1bad7a
+wcet/method/SPI_Swap/context/Message_Sender_Update->SPI_Swap(5664)/basicblock/2/loopbound=10
+wcet/method/SPI_Swap/context/Message_Sender_Update->SPI_Swap(5664)/basicblock/5/loopbound=10
+wcet/selection=Message_Sender_Update->SPI_Swap(57a8)
+wcet/symbol=SPI_Swap

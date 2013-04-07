@@ -31,6 +31,7 @@ extern uint16_t Right_motor_speed_G;
 /* Global count of the Encoder Wheels */
 extern int32_t WheelCounts_Right_G;
 extern Bool Course_correction_Rt;
+extern Bool Course_correction_Lt;
 extern int32_t Motor_Rt_Enc_Track;
 extern Bool End_Of_MoveRt;
 
@@ -81,7 +82,7 @@ void Motor_Right_Update(void)
 
 	if(System_Mode_G == Go)
 	{
-		moveRt = Script_G.Movement[Script_no_G];
+		moveRt = Fd; //Script_G.Movement[Script_no_G];
 
 		/* Calculate the absolute value of encoder counts since previous update */
 		Enc_Rt_Diff = (WheelCounts_Right_G - Enc_Rt_Old);
@@ -98,50 +99,56 @@ void Motor_Right_Update(void)
 
 		Enc_Rt_Old = WheelCounts_Right_G;
 
-		/* Check to see if the next step in the Script is to be executed */
-		if(Script_no_check_Rt != Script_no_G)
-		{
-			Script_no_check_Rt = Script_no_G;
-			Motor_Rt_Enc_Track = 0;
-			scriptTimeoutRt = 0;
-		}
-		else
-		{
-			Script_no_check_Rt = Script_no_G;
-			scriptTimeoutRt++;
-		}
+//		/* Check to see if the next step in the Script is to be executed */
+//		if(Script_no_check_Rt != Script_no_G)
+//		{
+//			Script_no_check_Rt = Script_no_G;
+//			Motor_Rt_Enc_Track = 0;
+//			scriptTimeoutRt = 0;
+//		}
+//		else
+//		{
+//			Script_no_check_Rt = Script_no_G;
+//			scriptTimeoutRt++;
+//		}
 
-		if(scriptTimeoutRt > 5000)
-		{
-			moveRt = DeployLf;
-		}
+//		if(scriptTimeoutRt > 5000)
+//		{
+//			moveRt = DeployLf;
+//		}
+
 
 		/* Script reader */
 		switch(moveRt)
 		{
 		case Fd:
 		case Lf:
-			/* Check the encoder tracker has reached the target count */
-			if(Motor_Rt_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT))
-			{
-				End_Of_MoveRt = False;
-				Right_motor_direction_G = Forwards;
-				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
-			}
-			/* Check for overshoot */
-			else if(Motor_Rt_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
-			{
-				End_Of_MoveRt = False;
-				Right_motor_direction_G = Reverse;
-				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
-			}
-			/* Stop the motor once the target is reached */
-			else
-			{
-				End_Of_MoveRt = True;
-				Right_motor_speed_G = 0;
-				bottleTimeoutRt = 0;
-			}
+
+			End_Of_MoveRt = False;
+			Right_motor_direction_G = Forwards;
+			speedControlRight(Course_correction_Lf, Course_correction_Rt);
+
+//			/* Check the encoder tracker has reached the target count */
+//			if(Motor_Rt_Enc_Track < (Script_G.Enc_counts[Script_no_G] - BUFFER_COUNT))
+//			{
+//				End_Of_MoveRt = False;
+//				Right_motor_direction_G = Forwards;
+//				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
+//			}
+//			/* Check for overshoot */
+//			else if(Motor_Rt_Enc_Track > (Script_G.Enc_counts[Script_no_G] + BUFFER_COUNT))
+//			{
+//				End_Of_MoveRt = False;
+//				Right_motor_direction_G = Reverse;
+//				Right_motor_speed_G = rampDownRight(Script_G.Enc_counts[Script_no_G], Motor_Rt_Enc_Track, Course_correction_Rt);
+//			}
+//			/* Stop the motor once the target is reached */
+//			else
+//			{
+//				End_Of_MoveRt = True;
+//				Right_motor_speed_G = 0;
+//				bottleTimeoutRt = 0;
+//			}
 			break;
 		case Bd:
 		case Rt:
@@ -205,6 +212,38 @@ void Motor_Right_Update(void)
 
 	visualsRt();
 }
+
+uint16_t speedControlRight(Bool correctionL, Bool correctionR)
+{
+	static uint16_t speed;
+
+	if(Right_motor_speed_G == 0)
+	{
+		Right_motor_speed_G = CRAWL_SPEED;
+	}
+
+	if((correctionL == False) && (correctionR == True))
+	{
+		Right_motor_speed_G++;
+	}
+	else if((correctionL == True) && (correctionR == False))
+	{
+		Right_motor_speed_G--;
+	}
+
+	if(Right_motor_speed_G < (CRAWL_SPEED - 0))
+	{
+		Right_motor_speed_G = (CRAWL_SPEED - 0);
+	}
+
+	if(Right_motor_speed_G > (CRAWL_SPEED + 2))
+	{
+		Right_motor_speed_G = CRAWL_SPEED + 2;
+	}
+
+	return speed;
+}
+
 
 uint16_t rampDownRight(int32_t scriptCount, int32_t currentCount, Bool correction)
 {
@@ -271,10 +310,7 @@ void visualsRt(void)
 		GPIO_Write(LED_Pin_RtFd, GPIO_LOW);
 	}
 
-	if(
-		Right_motor_direction_G == Reverse
-		&& Right_motor_speed_G != 0
-		)
+	if(( Right_motor_direction_G == Reverse && Right_motor_speed_G != 0) || (Course_correction_Rt == True))
 	{
 		GPIO_Write(LED_Pin_RtBd, GPIO_HIGH);
 	}
@@ -283,6 +319,6 @@ void visualsRt(void)
 		GPIO_Write(LED_Pin_RtBd, GPIO_LOW);
 	}
 
-	//Segment_Write(displayA, (Motor_Rt_Enc_Track & 0x000F) >> 0);
-	//Segment_Write(displayB, (Motor_Rt_Enc_Track & 0x00F0) >> 4);
+	Segment_Write(displayA, (Right_motor_speed_G & 0x000F) >> 0);
+	Segment_Write(displayB, (Right_motor_speed_G & 0x00F0) >> 4);
 }

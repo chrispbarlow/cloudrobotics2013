@@ -49,6 +49,24 @@ void Course_Corrector_Update(void)
 	{
 		/* Encoder monitor task */
 		/* If the Left side is faster than the Right, activate the Left CC flag */
+//		if(Motor_Lf_Enc_Track > Motor_Rt_Enc_Track)
+//		{
+//			Course_correction_Lf = False;
+//			Course_correction_Rt = True;
+//		}
+//		/* If the Right side is faster than the Left, activate the Right CC flag */
+//		else if(Motor_Lf_Enc_Track < Motor_Rt_Enc_Track)
+//		{
+//			Course_correction_Lf = True;
+//			Course_correction_Rt = False;
+//		}
+//		/* If the difference is tolerable, deactivate the flags */
+//		else
+//		{
+//			Course_correction_Lf = False;
+//			Course_correction_Rt = False;
+//		}
+
 		if((Motor_Lf_Enc_Track - Motor_Rt_Enc_Track) > COURSE_CORRECTION_BUFFER)
 		{
 			Course_correction_Lf = False;
@@ -66,6 +84,7 @@ void Course_Corrector_Update(void)
 			Course_correction_Lf = False;
 			Course_correction_Rt = False;
 		}
+
 	}
 	/* Ensure default is False */
 	else
