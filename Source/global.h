@@ -59,9 +59,10 @@
 #define US_MIN (25)
 #define US_NOISE (15)
 #define IR_MIN (21)
-#define IR_MAX (25)
+#define IR_MAX (27)
 #define IR_NOISE (2)
 
+#define HAMMER_TIME (250)
 
 /* Main high-level system mode */
 typedef enum {Ready, Set, Go, E_Stop, Game_Over} Mode;

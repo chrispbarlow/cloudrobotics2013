@@ -229,13 +229,13 @@ void visualsRt(void)
 		GPIO_Write(LED_Pin_RtBd, GPIO_LOW);
 	}
 
-//	Segment_Write(displayA, (sensorReadings.USFwd & 0x000F) >> 0);
-//	Segment_Write(displayB, (sensorReadings.USFwd & 0x00F0) >> 4);
-//	Segment_Write(displayC, (sensorReadings.USFwd & 0x0F00) >> 8);
+	Segment_Write(displayA, (sensorReadings.USFwd & 0x000F) >> 0);
+	Segment_Write(displayB, (sensorReadings.USFwd & 0x00F0) >> 4);
+	Segment_Write(displayC, (sensorReadings.USFwd & 0x0F00) >> 8);
 
-	Segment_Write(displayA, (sensorReadings.IRRight & 0x000F) >> 0);
-	Segment_Write(displayB, (sensorReadings.IRRight & 0x00F0) >> 4);
-	Segment_Write(displayC, (sensorReadings.IRLeft & 0x000F) >> 0);
+//	Segment_Write(displayA, (sensorReadings.IRRight & 0x000F) >> 0);
+//	Segment_Write(displayB, (sensorReadings.IRRight & 0x00F0) >> 4);
+//	Segment_Write(displayC, (sensorReadings.IRLeft & 0x000F) >> 0);
 	Segment_Write(displayD, (sensorReadings.IRLeft & 0x00F0) >> 4);
 
 }
