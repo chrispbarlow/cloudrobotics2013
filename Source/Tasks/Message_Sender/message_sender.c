@@ -88,18 +88,6 @@ void Message_Sender_Init(void)
  */
 void Message_Sender_Update(void)
 {
-	/* Test values */
-	ticked++;
-	if(ticked % 4000 == 0)
-	{
-		candataEnc[0] = 0x20;
-		candataEnc[1] = 0x20;
-	}
-	else if ((ticked + 2000) % 4000 == 0)
-	{
-		candataEnc[0] = 0xA0;
-		candataEnc[1] = 0xA0;
-	}
 
 	/* First Update ensures the CONFIG values are correct */
 	if(init == False)

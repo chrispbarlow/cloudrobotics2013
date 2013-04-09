@@ -125,6 +125,7 @@ void CAN_relay_Update(void)
 		/* Construct the CAN messages based on the information */
 		constructCANLf();
 		constructCANRt();
+		constructCANEnc();
 	}
 	/* Force the Robot to stop by flooding the CAN with the STOP message */
 	//else
@@ -172,17 +173,15 @@ void constructCANRt(void)
 
 void constructCANEnc(void)
 {
-	in32_t leftEnc = WheelCounts_Left_G;
-	in32_t RightEnc = WheelCounts_Right_G;
 
-	candataEnc[0] =  (leftEnc  >>24)&0xFF;
-	candataEnc[1] =  (leftEnc  >>16)&0xFF;
-	candataEnc[2] =  (leftEnc  >>8) &0xFF;
-	candataEnc[3] =  (leftEnc  >>0) &0xFF;
-	candataEnc[4] =  (RightEnc >>24)&0xFF;
-	candataEnc[5] =  (RightEnc >>16)&0xFF;
-	candataEnc[6] =  (RightEnc >>8) &0xFF;
-	candataEnc[7] =  (RightEnc >>0) &0xFF;
+	candataEnc[0] =  (WheelCounts_Left_G  >>24)&0xFF;
+	candataEnc[1] =  (WheelCounts_Left_G  >>16)&0xFF;
+	candataEnc[2] =  (WheelCounts_Left_G  >>8) &0xFF;
+	candataEnc[3] =  (WheelCounts_Left_G  >>0) &0xFF;
+	candataEnc[4] =  (WheelCounts_Right_G >>24)&0xFF;
+	candataEnc[5] =  (WheelCounts_Right_G >>16)&0xFF;
+	candataEnc[6] =  (WheelCounts_Right_G >>8) &0xFF;
+	candataEnc[7] =  (WheelCounts_Right_G >>0) &0xFF;
 }
 
 /**

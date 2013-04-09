@@ -63,6 +63,7 @@ void System_Control_Update(void)
 	{
 	/* Wait for pull cord to determine direction */
 	case Ready:
+
 		movement_G = Fd;
 		System_Mode_G = Go;
 		break;

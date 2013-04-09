@@ -109,6 +109,9 @@ void Motor_Left_Update(void)
 		case Stp:
 		default:
 			Left_motor_speed_G = 0;
+			Motor_Lf_Enc_Track = 0;
+			Enc_Lf_Diff = 0;
+			Enc_Lf_Old = 0;
 			break;
 		}
 	}
