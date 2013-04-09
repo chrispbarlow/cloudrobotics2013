@@ -21,6 +21,11 @@ extern uint16_t Left_motor_speed_G;
 extern Direction Right_motor_direction_G;
 extern uint16_t Right_motor_speed_G;
 
+/* Current encoder counts */
+extern int32_t WheelCounts_Left_G;
+extern int32_t WheelCounts_Right_G;
+
+
 /* Check the System Mode */
 extern Mode System_Mode_G;
 
@@ -116,16 +121,11 @@ void CAN_relay_Update(void)
 		motor_speed_Lf = Left_motor_speed_G * 2;
 		motor_speed_Rt = Right_motor_speed_G * 2;
 
-		if(Opponent_detected == True)
-		{
-			motor_direction_Rt = 0x0;
-			motor_direction_Lf = 0x0;
-		}
-
 
 		/* Construct the CAN messages based on the information */
 		constructCANLf();
 		constructCANRt();
+		constructCANEnc();
 	}
 	/* Force the Robot to stop by flooding the CAN with the STOP message */
 	//else
@@ -169,6 +169,19 @@ void constructCANRt(void)
 	candataRt[0] = motor_direction_Rt & 0x3;
 	candataRt[2] = motor_speed_Rt & 0xFF;
 	candataRt[3] = motor_speed_Rt >> 8;
+}
+
+void constructCANEnc(void)
+{
+
+	candataEnc[0] =  (WheelCounts_Left_G  >>24)&0xFF;
+	candataEnc[1] =  (WheelCounts_Left_G  >>16)&0xFF;
+	candataEnc[2] =  (WheelCounts_Left_G  >>8) &0xFF;
+	candataEnc[3] =  (WheelCounts_Left_G  >>0) &0xFF;
+	candataEnc[4] =  (WheelCounts_Right_G >>24)&0xFF;
+	candataEnc[5] =  (WheelCounts_Right_G >>16)&0xFF;
+	candataEnc[6] =  (WheelCounts_Right_G >>8) &0xFF;
+	candataEnc[7] =  (WheelCounts_Right_G >>0) &0xFF;
 }
 
 /**

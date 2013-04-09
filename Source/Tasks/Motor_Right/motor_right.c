@@ -98,16 +98,19 @@ void Motor_Right_Update(void)
 			break;
 		case Lf:
 			Right_motor_direction_G = Forwards;
-			Right_motor_speed_G = CRAWL_SPEED;
+			Right_motor_speed_G = CRAWL_SPEED-2;
 			break;
 		case Bd:
 		case Rt:
 			Right_motor_direction_G = Reverse;
-			Right_motor_speed_G = CRAWL_SPEED;
+			Right_motor_speed_G = CRAWL_SPEED-2;
 			break;
 		case Stp:
 		default:
 			Right_motor_speed_G = 0;
+			Motor_Rt_Enc_Track = 0;
+			Enc_Rt_Diff = 0;
+			Enc_Rt_Old = 0;
 			break;
 		}
 	}
@@ -229,13 +232,13 @@ void visualsRt(void)
 		GPIO_Write(LED_Pin_RtBd, GPIO_LOW);
 	}
 
-//	Segment_Write(displayA, (sensorReadings.USFwd & 0x000F) >> 0);
-//	Segment_Write(displayB, (sensorReadings.USFwd & 0x00F0) >> 4);
-//	Segment_Write(displayC, (sensorReadings.USFwd & 0x0F00) >> 8);
+	Segment_Write(displayA, (sensorReadings.USFwd & 0x000F) >> 0);
+	Segment_Write(displayB, (sensorReadings.USFwd & 0x00F0) >> 4);
+	Segment_Write(displayC, (sensorReadings.USFwd & 0x0F00) >> 8);
 
-	Segment_Write(displayA, (sensorReadings.IRRight & 0x000F) >> 0);
-	Segment_Write(displayB, (sensorReadings.IRRight & 0x00F0) >> 4);
-	Segment_Write(displayC, (sensorReadings.IRLeft & 0x000F) >> 0);
+//	Segment_Write(displayA, (sensorReadings.IRRight & 0x000F) >> 0);
+//	Segment_Write(displayB, (sensorReadings.IRRight & 0x00F0) >> 4);
+//	Segment_Write(displayC, (sensorReadings.IRLeft & 0x000F) >> 0);
 	Segment_Write(displayD, (sensorReadings.IRLeft & 0x00F0) >> 4);
 
 }

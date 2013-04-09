@@ -90,21 +90,28 @@ void Motor_Left_Update(void)
 		switch(movement_G)
 		{
 		case Fd:
-		case Rt:
 			/* Check the encoder tracker has reached the target count */
 			Left_motor_direction_G = Forwards;
 			Left_motor_speed_G = CRAWL_SPEED;
+			break;
+		case Rt:
+			/* Check the encoder tracker has reached the target count */
+			Left_motor_direction_G = Forwards;
+			Left_motor_speed_G = CRAWL_SPEED-2;
 
 			break;
 		case Bd:
 		case Lf:
 			Left_motor_direction_G = Reverse;
-			Left_motor_speed_G = CRAWL_SPEED;
+			Left_motor_speed_G = CRAWL_SPEED-2;
 
 			break;
 		case Stp:
 		default:
 			Left_motor_speed_G = 0;
+			Motor_Lf_Enc_Track = 0;
+			Enc_Lf_Diff = 0;
+			Enc_Lf_Old = 0;
 			break;
 		}
 	}
