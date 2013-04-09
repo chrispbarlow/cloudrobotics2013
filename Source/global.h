@@ -56,12 +56,13 @@
 /*
  * Sensor values
  */
-#define US_MIN (25)
+#define US_MIN (27)
 #define US_NOISE (15)
 #define IR_MIN (21)
-#define IR_MAX (25)
+#define IR_MAX (22)
 #define IR_NOISE (2)
 
+#define HAMMER_TIME (50)
 
 /* Main high-level system mode */
 typedef enum {Ready, Set, Go, E_Stop, Game_Over} Mode;

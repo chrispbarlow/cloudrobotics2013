@@ -15,7 +15,7 @@ extern int32_t WheelCounts_Left_G;
 
 extern Bearing movement_G;
 Bearing objectFollower;
-
+Bearing nextMove;
 /**
  * Initialisation for the object_detection package.
  * This will be called from Tasks_Init by default.
@@ -23,6 +23,7 @@ Bearing objectFollower;
 void object_detection_Init(void)
 {
 	objectFollower = Fd;
+	nextMove = Fd;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -32,81 +33,113 @@ void object_detection_Init(void)
  */
 void object_detection_Update(void)
 {
+	static uint16_t stop = 0;
 	Bool detection = False;
-	/*TODO: implement stop and wait to ensure encoders have finished moving */
-	if((sensorReadings.IRLeft-sensorReadings.IRRight > IR_NOISE)||(sensorReadings.IRRight-sensorReadings.IRLeft > IR_NOISE))
+
+	if(movement_G == Stp)
 	{
-		if((sensorReadings.IRLeft < sensorReadings.IRRight) && ((sensorReadings.IRLeft < IR_MIN)||((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))))
-		{
-			detection = True;
-			if(movement_G != Rt)
-			{
-				WheelCounts_Right_G = 0;
-				WheelCounts_Left_G = 0;
-			}
-			movement_G = Rt;
-			objectFollower = Rt;
-		}
-		else if((sensorReadings.IRLeft > sensorReadings.IRRight) && ((sensorReadings.IRRight < IR_MIN)||((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))))
-		{
-			detection = True;
-			if(movement_G != Lf)
-			{
-				WheelCounts_Right_G = 0;
-				WheelCounts_Left_G = 0;
-			}
-			movement_G = Lf;
-			objectFollower = Lf;
-		}
-	}
-	else if((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))
-	{
-		detection = True;
-		if(objectFollower == Fd)
-		{
-			objectFollower = Lf;
-		}
-		if(movement_G != objectFollower)
+		if(++stop >= HAMMER_TIME)
 		{
 			WheelCounts_Right_G = 0;
 			WheelCounts_Left_G = 0;
+			movement_G = nextMove;
+			stop = 0;
 		}
-
-		movement_G = objectFollower;
 	}
-
-	if((movement_G == Fd) && (detection == False))
+	else if((movement_G == Fd) && (nextMove != Fd))
 	{
-		switch(objectFollower)
+		if(++stop >= 12*HAMMER_TIME)
 		{
-		case Rt:
-			if(sensorReadings.IRLeft > IR_MAX)
-			{
-				detection = True;
-				WheelCounts_Right_G = 0;
-				WheelCounts_Left_G = 0;
-				movement_G = Lf;
-			}
-			break;
-
-		case Lf:
-			if(sensorReadings.IRRight > IR_MAX)
-			{
-				detection = True;
-				WheelCounts_Right_G = 0;
-				WheelCounts_Left_G = 0;
-				movement_G = Rt;
-			}
-			break;
-		default:
-			break;
+			movement_G = nextMove;
+			nextMove = Fd;
+			stop = 0;
 		}
 	}
-	if((detection == False)&&(movement_G != Fd))
+	else
 	{
-		WheelCounts_Right_G = 0;
-		WheelCounts_Left_G = 0;
+		if((sensorReadings.IRLeft-sensorReadings.IRRight > IR_NOISE)||(sensorReadings.IRRight-sensorReadings.IRLeft > IR_NOISE))
+		{
+			if((sensorReadings.IRLeft < sensorReadings.IRRight) && ((sensorReadings.IRLeft < IR_MIN)||((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))))
+			{
+				detection = True;
+//				if(movement_G != Rt)
+//				{
+//					movement_G = Stp;
+//				}
+				movement_G = Rt;
+				objectFollower = Rt;
+			}
+			else if((sensorReadings.IRLeft > sensorReadings.IRRight) && ((sensorReadings.IRRight < IR_MIN)||((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))))
+			{
+				detection = True;
+//				if(movement_G != Lf)
+//				{
+//					movement_G = Stp;
+//				}
+				movement_G = Lf;
+				objectFollower = Lf;
+			}
+		}
+		else if(((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))&&(nextMove == Fd))
+		{
+			detection = True;
+			if(objectFollower == Fd)
+			{
+				objectFollower = Lf;
+			}
+//			if(movement_G != objectFollower)
+//			{
+//				movement_G = Stp;
+//			}
 
-		movement_G = Fd;
+			movement_G = objectFollower;
+		}
+
+		if((detection == False)&&(movement_G != Fd)&&(nextMove == Fd))
+		{
+			movement_G = Stp;
+		}
+		else if(detection == False)
+		{
+			switch(objectFollower)
+			{
+			case Rt:
+				if(sensorReadings.IRLeft > IR_MAX)
+				{
+					detection = True;
+//					if(movement_G != Lf)
+//					{
+//						movement_G = Stp;
+//					}
+					nextMove = Lf;
+					movement_G = Fd;
+				}
+				else
+				{
+					nextMove = Fd;
+				}
+				break;
+
+			case Lf:
+				if(sensorReadings.IRRight > IR_MAX)
+				{
+					detection = True;
+//					if(movement_G != Rt)
+//					{
+//						movement_G = Stp;
+//					}
+					nextMove = Rt;
+					movement_G = Fd;
+				}
+				else
+				{
+					nextMove = Fd;
+				}
+				break;
+			default:
+				nextMove = Fd;
+				break;
+			}
+		}
 	}
 }
