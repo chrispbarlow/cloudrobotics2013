@@ -98,12 +98,12 @@ void Motor_Right_Update(void)
 			break;
 		case Lf:
 			Right_motor_direction_G = Forwards;
-			Right_motor_speed_G = CRAWL_SPEED;
+			Right_motor_speed_G = CRAWL_SPEED-2;
 			break;
 		case Bd:
 		case Rt:
 			Right_motor_direction_G = Reverse;
-			Right_motor_speed_G = CRAWL_SPEED;
+			Right_motor_speed_G = CRAWL_SPEED-2;
 			break;
 		case Stp:
 		default:

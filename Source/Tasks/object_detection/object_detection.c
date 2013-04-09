@@ -33,7 +33,7 @@ void object_detection_Init(void)
  */
 void object_detection_Update(void)
 {
-	static uint8_t stop = 0;
+	static uint16_t stop = 0;
 	Bool detection = False;
 
 	if(movement_G == Stp)
@@ -43,6 +43,15 @@ void object_detection_Update(void)
 			WheelCounts_Right_G = 0;
 			WheelCounts_Left_G = 0;
 			movement_G = nextMove;
+			stop = 0;
+		}
+	}
+	else if((movement_G == Fd) && (nextMove != Fd))
+	{
+		if(++stop >= 12*HAMMER_TIME)
+		{
+			movement_G = nextMove;
+			nextMove = Fd;
 			stop = 0;
 		}
 	}
@@ -71,7 +80,7 @@ void object_detection_Update(void)
 				objectFollower = Lf;
 			}
 		}
-		else if((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))
+		else if(((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))&&(nextMove == Fd))
 		{
 			detection = True;
 			if(objectFollower == Fd)
@@ -103,7 +112,7 @@ void object_detection_Update(void)
 //						movement_G = Stp;
 //					}
 					nextMove = Lf;
-					movement_G = Lf;
+					movement_G = Fd;
 				}
 				else
 				{
@@ -120,7 +129,7 @@ void object_detection_Update(void)
 //						movement_G = Stp;
 //					}
 					nextMove = Rt;
-					movement_G = Rt;
+					movement_G = Fd;
 				}
 				else
 				{
