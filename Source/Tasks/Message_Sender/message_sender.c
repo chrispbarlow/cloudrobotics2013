@@ -28,7 +28,7 @@ extern uint8_t candataLf[8];
 extern uint8_t candataRt[8];
 
 /* Servo CAN data array*/
-extern uint8_t servo[8];
+extern uint8_t candataEnc[8];
 
 /* System Mode */
 extern Mode System_Mode_G;
@@ -78,11 +78,6 @@ void Message_Sender_Init(void)
 
 	init = False;
 
-	for(uint8_t i = 0; i < 8; i++)
-	{
-		servo[i] = 0x0;
-	}
-
 	ticked = 0;
 }
 
@@ -97,13 +92,13 @@ void Message_Sender_Update(void)
 	ticked++;
 	if(ticked % 4000 == 0)
 	{
-		servo[0] = 0x20;
-		servo[1] = 0x20;
+		candataEnc[0] = 0x20;
+		candataEnc[1] = 0x20;
 	}
 	else if ((ticked + 2000) % 4000 == 0)
 	{
-		servo[0] = 0xA0;
-		servo[1] = 0xA0;
+		candataEnc[0] = 0xA0;
+		candataEnc[1] = 0xA0;
 	}
 
 	/* First Update ensures the CONFIG values are correct */
@@ -221,7 +216,7 @@ void Message_Sender_Update(void)
 		/* Load CAN message into TX2: Servo controls */
 		GPIO_Write(CS_PIN, GPIO_LOW);
 		SPI_Swap(SPI0, LOAD_TX2_INS);
-		spi_buffer_CAN(0x05A5EEEE, 8, servo);
+		spi_buffer_CAN(0x05A5EEEE, 8, candataEnc);
 		GPIO_Write(CS_PIN, GPIO_HIGH);
 
 		/* Tx0 buffer full so request to send */

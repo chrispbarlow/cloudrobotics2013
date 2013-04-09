@@ -28,5 +28,6 @@ void readCAN(void);
 void constructCANLf(void);
 void constructCANRt(void);
 void constructStopCAN(void);
+void constructCANEnc(void);
 
 #endif // !CAN_RELAY_H_INCLUDED

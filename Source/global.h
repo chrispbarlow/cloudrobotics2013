@@ -157,7 +157,7 @@ uint32_t canIDLf;
 uint32_t canIDRt;
 uint8_t candataLf[8];
 uint8_t candataRt[8];
-uint8_t servo[8];
+uint8_t candataEnc[8];
 
 /* CAN Read Buffer structures */
 typedef enum {New, Used} buffer_status;
