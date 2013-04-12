@@ -108,6 +108,9 @@ void Motor_Right_Update(void)
 		case Stp:
 		default:
 			Right_motor_speed_G = 0;
+			Motor_Rt_Enc_Track = 0;
+			Enc_Rt_Diff = 0;
+			Enc_Rt_Old = 0;
 			break;
 		}
 	}
