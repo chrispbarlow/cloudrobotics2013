@@ -1457,7 +1457,7 @@ uint16_t speedControlRight(Bool correctionL, Bool correctionR)
 20000a00:	978200b2 	lhu	v0,178(gp)
 20000a04:	00000000 	nop
 20000a08:	14400002 	bnez	v0,20000a14 <speedControlRight+0x14>
-20000a0c:	2402000c 	li	v0,12
+20000a0c:	24020011 	li	v0,17
 	{
 		Right_motor_speed_G = CRAWL_SPEED;
 20000a10:	a78200b2 	sh	v0,178(gp)
@@ -1490,9 +1490,9 @@ uint16_t speedControlRight(Bool correctionL, Bool correctionR)
 	if(Right_motor_speed_G < (CRAWL_SPEED - CORRECTION_VALUE_LOWER))
 20000a50:	978200b2 	lhu	v0,178(gp)
 20000a54:	00000000 	nop
-20000a58:	2c42000c 	sltiu	v0,v0,12
+20000a58:	2c420011 	sltiu	v0,v0,17
 20000a5c:	10400002 	beqz	v0,20000a68 <speedControlRight+0x68>
-20000a60:	2402000c 	li	v0,12
+20000a60:	24020011 	li	v0,17
 	{
 		Right_motor_speed_G = (CRAWL_SPEED - CORRECTION_VALUE_LOWER);
 20000a64:	a78200b2 	sh	v0,178(gp)
@@ -1501,12 +1501,12 @@ uint16_t speedControlRight(Bool correctionL, Bool correctionR)
 	if(Right_motor_speed_G > (CRAWL_SPEED + CORRECTION_VALUE_UPPER))
 20000a68:	978200b2 	lhu	v0,178(gp)
 20000a6c:	00000000 	nop
-20000a70:	2c42000f 	sltiu	v0,v0,15
+20000a70:	2c420014 	sltiu	v0,v0,20
 20000a74:	14400003 	bnez	v0,20000a84 <speedControlRight+0x84>
 20000a78:	00000000 	nop
 	{
 		Right_motor_speed_G = CRAWL_SPEED + CORRECTION_VALUE_UPPER;
-20000a7c:	2402000e 	li	v0,14
+20000a7c:	24020013 	li	v0,19
 20000a80:	a78200b2 	sh	v0,178(gp)
 	}
 
@@ -1824,7 +1824,7 @@ void Motor_Right_Update(void)
 20000ce8:	24020002 	li	v0,2
 20000cec:	af820084 	sw	v0,132(gp)
 			Right_motor_speed_G = CRAWL_SPEED-2;
-20000cf0:	2402000a 	li	v0,10
+20000cf0:	2402000f 	li	v0,15
 			break;
 20000cf4:	08000344 	j	20000d10 <Motor_Right_Update+0xf4>
 20000cf8:	a78200b2 	sh	v0,178(gp)
@@ -2264,14 +2264,14 @@ void Motor_Left_Update(void)
 			Left_motor_direction_G = Forwards;
 			Left_motor_speed_G = CRAWL_SPEED;
 20000fbc:	080003f3 	j	20000fcc <Motor_Left_Update+0xa8>
-20000fc0:	2402000c 	li	v0,12
+20000fc0:	24020011 	li	v0,17
 			break;
 		case Rt:
 			/* Check the encoder tracker has reached the target count */
 			Left_motor_direction_G = Forwards;
 20000fc4:	af820094 	sw	v0,148(gp)
 			Left_motor_speed_G = CRAWL_SPEED-2;
-20000fc8:	2402000a 	li	v0,10
+20000fc8:	2402000f 	li	v0,15
 
 			break;
 20000fcc:	080003fc 	j	20000ff0 <Motor_Left_Update+0xcc>

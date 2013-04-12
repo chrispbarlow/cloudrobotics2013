@@ -34,7 +34,7 @@
 #define CORRECTION_VALUE_UPPER (2)
 #define CORRECTION_VALUE_LOWER (0)
 #define CORRECTION_THRESHOLD (24)
-#define CRAWL_SPEED (12)
+#define CRAWL_SPEED (17)
 #define BOTTLE_SPEED (24)
 #define RPM_FACTOR (0.09)
 #define RPM_FLOOR (8)
