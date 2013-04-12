@@ -272,7 +272,7 @@ void spi_receive_CAN(uint32_t buffer_ins, Receive_Buffers * buffer)
 	SPI_Swap(SPI0, 0xFF);
 	SPI_Swap(SPI0, 0xFF);
 	SPI_Swap(SPI0, 0xFF);
-	SPI_Swap(SPI0, 0xFF);
+	buffer->ID = SPI_Swap(SPI0, 0xFF);
 	SPI_Swap(SPI0, 0xFF);
 
 	/* Known length */
