@@ -40,6 +40,7 @@ void object_detection_Init(void)
 void object_detection_Update(void)
 {
 	static uint16_t stop = 0;
+	Bool IRFlag = False;
 
 	switch(avoidance)
 	{
@@ -48,6 +49,39 @@ void object_detection_Update(void)
 
 		if((sensorReadings.IRLeft-sensorReadings.IRRight > IR_NOISE)||(sensorReadings.IRRight-sensorReadings.IRLeft > IR_NOISE))
 		{
+			IRFlag = True;
+		}
+		else if((avoidance != AVOID_L) && (avoidance != AVOID_R) && ((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))&&(nextMove == Fd))
+		{
+			if(lastAvoidance == STRAIGHT)
+			{
+				lastAvoidance = AVOID_R;
+			}
+			avoidance = lastAvoidance;
+
+			stop = 0;
+		}
+
+		if((avoidance == STRAIGHT) && (lastAvoidance == AVOID_L) && (sensorReadings.IRLeft >= IR_MAX))
+		{
+			if(++stop >= 13*HAMMER_TIME)
+			{
+				avoidance = FOLLOW_L;
+				stop = 0;
+			}
+		}
+		else if((avoidance == STRAIGHT) && (lastAvoidance == AVOID_R) && (sensorReadings.IRRight >= IR_MAX))
+		{
+			if(++stop >= 13*HAMMER_TIME)
+			{
+				avoidance = FOLLOW_R;
+				stop = 0;
+			}
+		}
+		else if(IRFlag == True)
+		{
+			stop = 0;
+
 			if((sensorReadings.IRLeft < sensorReadings.IRRight) && ((sensorReadings.IRLeft < IR_MIN)||((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))))
 			{
 				avoidance = AVOID_L;
@@ -57,30 +91,7 @@ void object_detection_Update(void)
 				avoidance = AVOID_R;
 			}
 		}
-		else if(((sensorReadings.USFwd < US_MIN) && (sensorReadings.USFwd > US_NOISE))&&(nextMove == Fd))
-		{
-			if(lastAvoidance == STRAIGHT)
-			{
-				lastAvoidance = AVOID_R;
-			}
-			avoidance = lastAvoidance;
-		}
-		else if((lastAvoidance == AVOID_L) && (sensorReadings.IRLeft > IR_MAX))
-		{
-			if(++stop >= 12*HAMMER_TIME)
-			{
-				avoidance = FOLLOW_L;
-				stop = 0;
-			}
-		}
-		else if((lastAvoidance == AVOID_R) && (sensorReadings.IRRight > IR_MAX))
-		{
-			if(++stop >= 12*HAMMER_TIME)
-			{
-				avoidance = FOLLOW_R;
-				stop = 0;
-			}
-		}
+
 		break;
 	case AVOID_L:
 		movement_G = Rt;
@@ -100,15 +111,28 @@ void object_detection_Update(void)
 		break;
 	case FOLLOW_L:
 		movement_G = Lf;
-		if(sensorReadings.IRLeft <= IR_MAX)
+
+		if(++stop >= 13*HAMMER_TIME)
 		{
+			lastAvoidance = STRAIGHT;
+		}
+		if((sensorReadings.IRLeft <= IR_MAX) || (lastAvoidance == STRAIGHT))
+		{
+			stop = 0;
 			avoidance = WAIT;
 		}
+		else
 		break;
 	case FOLLOW_R:
 		movement_G = Rt;
-		if(sensorReadings.IRRight <= IR_MAX)
+
+		if(++stop >= 13*HAMMER_TIME)
 		{
+			lastAvoidance = STRAIGHT;
+		}
+		if((sensorReadings.IRRight <= IR_MAX) || (lastAvoidance == STRAIGHT))
+		{
+			stop = 0;
 			avoidance = WAIT;
 		}
 		break;

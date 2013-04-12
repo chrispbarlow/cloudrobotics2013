@@ -136,11 +136,14 @@ void CAN_relay_Update(void)
 
 void readCAN(void)
 {
-	/* Check to see data received from Proximity sensor */
-	sensorReadings.IRLeft = bufferRX0.CAN_Data[3] & 0x3F;
-	sensorReadings.IRRight = bufferRX0.CAN_Data[5] & 0x3F;
+	if((bufferRX0.ID & 0xFF) == 0xC4)
+	{
+		/* Check to see data received from Proximity sensor */
+		sensorReadings.IRLeft = bufferRX0.CAN_Data[3] & 0x3F;
+		sensorReadings.IRRight = bufferRX0.CAN_Data[5] & 0x3F;
 
-	sensorReadings.USFwd = ((((bufferRX0.CAN_Data[6] & 0x3F) << 6) | (bufferRX0.CAN_Data[7] & 0x3F)) & 0x0FFF);
+		sensorReadings.USFwd = ((((bufferRX0.CAN_Data[6] & 0x3F) << 6) | (bufferRX0.CAN_Data[7] & 0x3F)) & 0x0FFF);
+	}
 }
 
 void constructCANLf(void)

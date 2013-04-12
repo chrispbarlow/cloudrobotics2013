@@ -34,7 +34,7 @@
 #define CORRECTION_VALUE_UPPER (2)
 #define CORRECTION_VALUE_LOWER (0)
 #define CORRECTION_THRESHOLD (24)
-#define CRAWL_SPEED (17)
+#define CRAWL_SPEED (15)
 #define BOTTLE_SPEED (24)
 #define RPM_FACTOR (0.09)
 #define RPM_FLOOR (8)
@@ -59,8 +59,8 @@
 #define US_MIN (27)
 #define US_NOISE (15)
 #define IR_MIN (21)
-#define IR_MAX (22)
-#define IR_NOISE (2)
+#define IR_MAX (23)
+#define IR_NOISE (5)
 
 #define HAMMER_TIME (50)
 
