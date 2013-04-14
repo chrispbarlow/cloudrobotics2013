@@ -8,6 +8,10 @@ This repo tracks the changes made to the main control code for the robot used fo
 The robot started out life being used for the Eurobot UK 2012 competition, details here: 
 http://chrisbarlow.wordpress.com/category/its-all-here/competition-entries/eurobot/eurobot-2012-treasure-island-team-r-me-r-t/
 
+Progress throughout the week can be tracked using the tags, Day1, Day2, etc.
+
+The Day1 tag shows the state of the original Eurobot codebase, as no coding work was done on the first daty.
+
 **About the CRH 2013 Project**
 
 The project we set ourselves for CRH was to use the existing hardware, encoders, range sensors, etc, along with an automotive telemetry device used by smith electric vehicles (http://blog.sevtelem.com) to store data about distance travelled and measured distances from objects in a database. A web site then polls the database for this data and constructs a map of the robot's surroundings.
