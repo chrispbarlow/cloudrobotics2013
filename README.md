@@ -30,7 +30,7 @@ For more details on time-triggered scheduling see http://www.tte-systems.com/boo
 
 For this competition, the functionality of the robot needed to be changed from a blind path-follower, to an autonomous rover. The robot was required to not only detect when it was approaching an object, but also to react to the objects. The majority of the changes were made by replacing tasks, *Opponent_Tracker/*, *PathFinder/* and *Script_Keeper/* with a single task, *object_detection/*.
 
-This new task, written solely for the hackathon, takes the sensor readings (which are transmitted via CAN bus from a separate Arduino-based sensor node) and alters a global direction variable, **movement_G** in order to control the movement of the robot.
+This new task, written solely for the hackathon, takes the sensor readings (which are transmitted via CAN bus from a separate Arduino-based sensor node) and alters a global direction variable, *movement_G* in order to control the movement of the robot.
 
 The two motor control tasks, *Motor_Left/* and *Motor_Right/* use this global direction to decide on the speed and direction for their respective motors.
 
