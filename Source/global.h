@@ -56,7 +56,7 @@
 /*
  * Sensor values
  */
-#define US_MIN (27)
+#define US_MIN (28)
 #define US_NOISE (15)
 #define IR_MIN (21)
 #define IR_MAX (23)

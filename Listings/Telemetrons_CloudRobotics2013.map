@@ -1,0 +1,1606 @@
+Archive member included because of file (symbol)
+
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+                              Source\main.o (Device_Add)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o) (__errno)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o) (_impure_ptr)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o) (strcmp)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+                              Source\Tasks\Motor_Right\motor_right.o (__adddf3)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+                              Source\Tasks\Motor_Right\motor_right.o (__muldf3)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+                              Source\Tasks\Motor_Right\motor_right.o (__floatsidf)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+                              Source\Tasks\Motor_Right\motor_right.o (__fixdfsi)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o) (__thenan_df)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o) (__ucmpdi2)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o) (__clzsi2)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o) (__pack_d)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o) (__unpack_d)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o) (__lshrdi3)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o) (__ashldi3)
+c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+                              c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o) (__clz_tab)
+
+Allocating common symbols
+Common symbol       size              file
+
+Target_counts_Left_G
+                    0x4               Source\config.o
+Motor_Lf_Enc_Track  0x4               Source\config.o
+Opponent_detected   0x4               Source\config.o
+RX0_ID_Bytes        0x5               Source\Tasks\Message_Sender\message_sender.o
+Enc_Rt_Old          0x4               Source\Tasks\Motor_Right\motor_right.o
+next_x_map_pos_G    0x4               Source\config.o
+robot_x_map_pos_G   0x4               Source\config.o
+next_y_map_pos_G    0x4               Source\config.o
+EXT_ID_Bytes        0x5               Source\Tasks\Message_Sender\message_sender.o
+System_Mode_G       0x4               Source\Tasks\System_Control\system_control.o
+Orientation_G       0x4               Source\config.o
+next_distance_G     0x4               Source\config.o
+next_x_coord_G      0x4               Source\config.o
+speedPin            0x1               Source\Tasks\Message_Sender\message_sender.o
+Path_G              0x80              Source\config.o
+debounce            0x1               Source\Tasks\System_Control\system_control.o
+Enc_Lf_Diff         0x4               Source\Tasks\Motor_Left\motor_left.o
+robot_x_coord_G     0x4               Source\config.o
+Enc_Lf_Old          0x4               Source\Tasks\Motor_Left\motor_left.o
+Course_correction_Rt
+                    0x4               Source\config.o
+canIDRt             0x4               Source\config.o
+candataLf           0x8               Source\config.o
+nextMove            0x4               Source\Tasks\object_detection\object_detection.o
+Course_correction_Lf
+                    0x4               Source\config.o
+canIDSensors        0x4               Source\config.o
+robot_y_map_pos_G   0x4               Source\config.o
+delta_x             0x2               Source\config.o
+Right_motor_direction_G
+                    0x4               Source\config.o
+WheelCounts_Left_G  0x4               Source\config.o
+robot_y_coord_G     0x4               Source\config.o
+objectFollower      0x4               Source\Tasks\object_detection\object_detection.o
+opp_x_coord_G       0x4               Source\config.o
+Left_motor_direction_G
+                    0x4               Source\config.o
+WheelCount          0x8               Source\Tasks\Read_Enc\read_enc.o
+Enc_Rt_Diff         0x4               Source\Tasks\Motor_Right\motor_right.o
+bufferRX0           0x10              Source\config.o
+candataRt           0x8               Source\config.o
+motor_direction_Rt  0x1               Source\Tasks\CAN_relay\can_relay.o
+heading_radians_G   0x4               Source\config.o
+Pathdriver_Control_G
+                    0x4               Source\config.o
+motor_speed_Rt      0x2               Source\Tasks\CAN_relay\can_relay.o
+candataEnc          0x8               Source\config.o
+Left_motor_speed_G  0x2               Source\config.o
+Right_motor_speed_G
+                    0x2               Source\config.o
+init                0x4               Source\Tasks\Message_Sender\message_sender.o
+next_wheel_counts_G
+                    0x2               Source\config.o
+next_y_coord_G      0x4               Source\config.o
+delta_y             0x2               Source\config.o
+RX1_ID_Bytes        0x5               Source\Tasks\Message_Sender\message_sender.o
+RX_Buffer_ID_Bytes  0x5               Source\Tasks\Message_Sender\message_sender.o
+EncSignal_A         0x8               Source\Tasks\Read_Enc\read_enc.o
+Team_Colour         0x4               Source\config.o
+Target_counts_Right_G
+                    0x4               Source\config.o
+RevCount            0x8               Source\Tasks\Read_Enc\read_enc.o
+WheelCounts_Right_G
+                    0x4               Source\config.o
+Pathfinder_Control_G
+                    0x4               Source\config.o
+motor_speed_Lf      0x2               Source\Tasks\CAN_relay\can_relay.o
+Log_Buffer          0x3e8             Source\Scheduler\Internal\log.o
+PAD_ID              0x4               Source\Tasks\Message_Sender\message_sender.o
+Strategy_G          0x4               Source\config.o
+EncSignal_B         0x8               Source\Tasks\Read_Enc\read_enc.o
+motor_direction_Lf  0x1               Source\Tasks\CAN_relay\can_relay.o
+bufferRX1           0x10              Source\config.o
+RX_Buffer_Data_array
+                    0x8               Source\Tasks\Message_Sender\message_sender.o
+avoidance           0x4               Source\Tasks\object_detection\object_detection.o
+EncoderCount        0x8               Source\Tasks\Read_Enc\read_enc.o
+opp_y_coord_G       0x4               Source\config.o
+Motor_Rt_Enc_Track  0x4               Source\config.o
+lastAvoidance       0x4               Source\Tasks\object_detection\object_detection.o
+bufferTime          0x1               Source\Tasks\Read_Enc\read_enc.o
+Script_update       0x4               Source\config.o
+sensorReadings      0xc               Source\config.o
+Script_no_G         0x1               Source\config.o
+WheelDirection      0x8               Source\Tasks\Read_Enc\read_enc.o
+End_Of_MoveRt       0x4               Source\config.o
+ticked              0x2               Source\Tasks\Message_Sender\message_sender.o
+Script_G            0x200             Source\config.o
+Pulse_Flag          0x8               Source\Tasks\Read_Enc\read_enc.o
+canIDLf             0x4               Source\config.o
+CountError_Flag     0x8               Source\Tasks\Read_Enc\read_enc.o
+movement_G          0x4               Source\config.o
+Path_no_G           0x1               Source\config.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 Source\main.o
+ .data          0x0000000000000000        0x0 Source\main.o
+ .bss           0x0000000000000000        0x0 Source\main.o
+ .pdr           0x0000000000000000       0x40 Source\main.o
+ .text          0x0000000000000000        0x0 Source\config.o
+ .data          0x0000000000000000        0x0 Source\config.o
+ .bss           0x0000000000000000        0x0 Source\config.o
+ .reginfo       0x0000000000000000       0x18 Source\config.o
+ .text          0x0000000000000000        0x0 Source\Tasks\tasks.o
+ .data          0x0000000000000000        0x0 Source\Tasks\tasks.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\tasks.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\tasks.o
+ .pdr           0x0000000000000000       0x20 Source\Tasks\tasks.o
+ .text          0x0000000000000000        0x0 Source\Tasks\object_detection\object_detection.o
+ .data          0x0000000000000000        0x0 Source\Tasks\object_detection\object_detection.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\object_detection\object_detection.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\object_detection\object_detection.o
+ .pdr           0x0000000000000000       0x40 Source\Tasks\object_detection\object_detection.o
+ .text          0x0000000000000000        0x0 Source\Tasks\System_Control\system_control.o
+ .data          0x0000000000000000        0x0 Source\Tasks\System_Control\system_control.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\System_Control\system_control.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\System_Control\system_control.o
+ .pdr           0x0000000000000000       0x40 Source\Tasks\System_Control\system_control.o
+ .text          0x0000000000000000        0x0 Source\Tasks\Read_Enc\read_enc.o
+ .data          0x0000000000000000        0x0 Source\Tasks\Read_Enc\read_enc.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\Read_Enc\read_enc.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\Read_Enc\read_enc.o
+ .pdr           0x0000000000000000       0x40 Source\Tasks\Read_Enc\read_enc.o
+ .text          0x0000000000000000        0x0 Source\Tasks\Motor_Right\motor_right.o
+ .data          0x0000000000000000        0x0 Source\Tasks\Motor_Right\motor_right.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\Motor_Right\motor_right.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\Motor_Right\motor_right.o
+ .pdr           0x0000000000000000       0xa0 Source\Tasks\Motor_Right\motor_right.o
+ .text.rampDownRight
+                0x0000000000000000       0xa4 Source\Tasks\Motor_Right\motor_right.o
+ .sdata         0x0000000000000000       0x10 Source\Tasks\Motor_Right\motor_right.o
+ .text          0x0000000000000000        0x0 Source\Tasks\Motor_Left\motor_left.o
+ .data          0x0000000000000000        0x0 Source\Tasks\Motor_Left\motor_left.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\Motor_Left\motor_left.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\Motor_Left\motor_left.o
+ .pdr           0x0000000000000000       0x80 Source\Tasks\Motor_Left\motor_left.o
+ .text.rampDownLeft
+                0x0000000000000000       0xa4 Source\Tasks\Motor_Left\motor_left.o
+ .sdata         0x0000000000000000       0x10 Source\Tasks\Motor_Left\motor_left.o
+ .text          0x0000000000000000        0x0 Source\Tasks\Message_Sender\message_sender.o
+ .data          0x0000000000000000        0x0 Source\Tasks\Message_Sender\message_sender.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\Message_Sender\message_sender.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\Message_Sender\message_sender.o
+ .pdr           0x0000000000000000       0xa0 Source\Tasks\Message_Sender\message_sender.o
+ .text.build_EXT_ID_bytes
+                0x0000000000000000       0x4c Source\Tasks\Message_Sender\message_sender.o
+ .sdata.Data    0x0000000000000000        0x8 Source\Tasks\Message_Sender\message_sender.o
+ .text          0x0000000000000000        0x0 Source\Tasks\Flashing_LED\flashing_led.o
+ .data          0x0000000000000000        0x0 Source\Tasks\Flashing_LED\flashing_led.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\Flashing_LED\flashing_led.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\Flashing_LED\flashing_led.o
+ .pdr           0x0000000000000000       0x40 Source\Tasks\Flashing_LED\flashing_led.o
+ .text          0x0000000000000000        0x0 Source\Tasks\Course_Corrector\course_corrector.o
+ .data          0x0000000000000000        0x0 Source\Tasks\Course_Corrector\course_corrector.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\Course_Corrector\course_corrector.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\Course_Corrector\course_corrector.o
+ .pdr           0x0000000000000000       0x40 Source\Tasks\Course_Corrector\course_corrector.o
+ .text          0x0000000000000000        0x0 Source\Tasks\CAN_relay\can_relay.o
+ .data          0x0000000000000000        0x0 Source\Tasks\CAN_relay\can_relay.o
+ .bss           0x0000000000000000        0x0 Source\Tasks\CAN_relay\can_relay.o
+ .reginfo       0x0000000000000000       0x18 Source\Tasks\CAN_relay\can_relay.o
+ .pdr           0x0000000000000000       0xe0 Source\Tasks\CAN_relay\can_relay.o
+ .text.constructCANLf
+                0x0000000000000000       0x2c Source\Tasks\CAN_relay\can_relay.o
+ .text.constructCANRt
+                0x0000000000000000       0x2c Source\Tasks\CAN_relay\can_relay.o
+ .text.constructStopCAN
+                0x0000000000000000       0x34 Source\Tasks\CAN_relay\can_relay.o
+ .text          0x0000000000000000        0x0 Source\System\startup.o
+ .data          0x0000000000000000        0x0 Source\System\startup.o
+ .bss           0x0000000000000000        0x0 Source\System\startup.o
+ .reginfo       0x0000000000000000       0x18 Source\System\startup.o
+ .pdr           0x0000000000000000       0xe0 Source\System\startup.o
+ .data.USR_Stk_Off
+                0x0000000000000000        0x4 Source\System\startup.o
+ .data.INT_Stk_Off
+                0x0000000000000000        0x4 Source\System\startup.o
+ .text          0x0000000000000000        0x0 Source\Scheduler\Internal\scheduler.o
+ .data          0x0000000000000000        0x0 Source\Scheduler\Internal\scheduler.o
+ .bss           0x0000000000000000        0x0 Source\Scheduler\Internal\scheduler.o
+ .reginfo       0x0000000000000000       0x18 Source\Scheduler\Internal\scheduler.o
+ .pdr           0x0000000000000000       0xa0 Source\Scheduler\Internal\scheduler.o
+ .text          0x0000000000000000        0x0 Source\Scheduler\Internal\log.o
+ .data          0x0000000000000000        0x0 Source\Scheduler\Internal\log.o
+ .bss           0x0000000000000000        0x0 Source\Scheduler\Internal\log.o
+ .reginfo       0x0000000000000000       0x18 Source\Scheduler\Internal\log.o
+ .pdr           0x0000000000000000      0x260 Source\Scheduler\Internal\log.o
+ .text.Get_Relative_Time
+                0x0000000000000000       0x1c Source\Scheduler\Internal\log.o
+ .text.Write_8  0x0000000000000000       0x28 Source\Scheduler\Internal\log.o
+ .text          0x0000000000000000        0x0 Source\Scheduler\Internal\interrupt.o
+ .data          0x0000000000000000        0x0 Source\Scheduler\Internal\interrupt.o
+ .bss           0x0000000000000000        0x0 Source\Scheduler\Internal\interrupt.o
+ .reginfo       0x0000000000000000       0x18 Source\Scheduler\Internal\interrupt.o
+ .pdr           0x0000000000000000      0x160 Source\Scheduler\Internal\interrupt.o
+ .text.Status_Reg_Get
+                0x0000000000000000        0xc Source\Scheduler\Internal\interrupt.o
+ .text.Cause_Reg_Get
+                0x0000000000000000        0xc Source\Scheduler\Internal\interrupt.o
+ .text.Cause_Reg_Set
+                0x0000000000000000        0xc Source\Scheduler\Internal\interrupt.o
+ .text.Status_Reg_Set
+                0x0000000000000000        0xc Source\Scheduler\Internal\interrupt.o
+ .text.Clear_Pending_Interrupt
+                0x0000000000000000       0x20 Source\Scheduler\Internal\interrupt.o
+ .text.Enable_System_Interrupt
+                0x0000000000000000       0x20 Source\Scheduler\Internal\interrupt.o
+ .text.Check_System_Interrupt
+                0x0000000000000000       0x20 Source\Scheduler\Internal\interrupt.o
+ .text          0x0000000000000000        0x0 Source\Drivers\Internal\uart.o
+ .data          0x0000000000000000        0x0 Source\Drivers\Internal\uart.o
+ .bss           0x0000000000000000        0x0 Source\Drivers\Internal\uart.o
+ .reginfo       0x0000000000000000       0x18 Source\Drivers\Internal\uart.o
+ .pdr           0x0000000000000000      0x180 Source\Drivers\Internal\uart.o
+ .text.uart_open_r
+                0x0000000000000000        0x8 Source\Drivers\Internal\uart.o
+ .text.uart_close_r
+                0x0000000000000000        0x8 Source\Drivers\Internal\uart.o
+ .rodata.str1.4
+                0x0000000000000000       0x2c Source\Drivers\Internal\uart.o
+ .text.UART_Transmitting_Data
+                0x0000000000000000       0x50 Source\Drivers\Internal\uart.o
+ .text.UART_Received_Data
+                0x0000000000000000       0x50 Source\Drivers\Internal\uart.o
+ .text.UART_Read
+                0x0000000000000000       0x74 Source\Drivers\Internal\uart.o
+ .text.uart_read_r
+                0x0000000000000000       0x8c Source\Drivers\Internal\uart.o
+ .text.UART_Write
+                0x0000000000000000       0x70 Source\Drivers\Internal\uart.o
+ .text.uart_write_r
+                0x0000000000000000       0x7c Source\Drivers\Internal\uart.o
+ .text.UART_Set_IrDA_Baud_Rate
+                0x0000000000000000       0xac Source\Drivers\Internal\uart.o
+ .text.UART_Set_Baud_Rate
+                0x0000000000000000       0x98 Source\Drivers\Internal\uart.o
+ .text.UART_Disable
+                0x0000000000000000       0x64 Source\Drivers\Internal\uart.o
+ .text.UART_Enable
+                0x0000000000000000       0xbc Source\Drivers\Internal\uart.o
+ .rodata.dev_uart
+                0x0000000000000000       0x14 Source\Drivers\Internal\uart.o
+ .text          0x0000000000000000        0x0 Source\Drivers\Internal\timer.o
+ .data          0x0000000000000000        0x0 Source\Drivers\Internal\timer.o
+ .bss           0x0000000000000000        0x0 Source\Drivers\Internal\timer.o
+ .reginfo       0x0000000000000000       0x18 Source\Drivers\Internal\timer.o
+ .pdr           0x0000000000000000      0x160 Source\Drivers\Internal\timer.o
+ .text.Timer_Stop
+                0x0000000000000000       0x28 Source\Drivers\Internal\timer.o
+ .text.Timer_Clear
+                0x0000000000000000       0x1c Source\Drivers\Internal\timer.o
+ .text.Timer_Overflow_Clear
+                0x0000000000000000       0x28 Source\Drivers\Internal\timer.o
+ .text.Timer_Set_Prescalar
+                0x0000000000000000       0x2c Source\Drivers\Internal\timer.o
+ .text.Timer_Set_Match
+                0x0000000000000000       0x2c Source\Drivers\Internal\timer.o
+ .text.Timer_Overflowed
+                0x0000000000000000       0x24 Source\Drivers\Internal\timer.o
+ .text.Timer_Frequency
+                0x0000000000000000       0x4c Source\Drivers\Internal\timer.o
+ .text.Timer_Value
+                0x0000000000000000       0x1c Source\Drivers\Internal\timer.o
+ .text.Timer_Wait
+                0x0000000000000000       0x68 Source\Drivers\Internal\timer.o
+ .text          0x0000000000000000        0x0 Source\Drivers\Internal\text_lcd.o
+ .data          0x0000000000000000        0x0 Source\Drivers\Internal\text_lcd.o
+ .bss           0x0000000000000000        0x0 Source\Drivers\Internal\text_lcd.o
+ .reginfo       0x0000000000000000       0x18 Source\Drivers\Internal\text_lcd.o
+ .pdr           0x0000000000000000       0xe0 Source\Drivers\Internal\text_lcd.o
+ .text.Send_Byte
+                0x0000000000000000      0x1a4 Source\Drivers\Internal\text_lcd.o
+ .text.Text_LCD_Send_Char
+                0x0000000000000000        0xc Source\Drivers\Internal\text_lcd.o
+ .text.Text_LCD_Init
+                0x0000000000000000      0x494 Source\Drivers\Internal\text_lcd.o
+ .text.Long_Delay
+                0x0000000000000000       0x6c Source\Drivers\Internal\text_lcd.o
+ .text.Short_Delay
+                0x0000000000000000       0x3c Source\Drivers\Internal\text_lcd.o
+ .rodata.str1.4
+                0x0000000000000000       0x28 Source\Drivers\Internal\text_lcd.o
+ .text.Text_LCD_Set_Row
+                0x0000000000000000       0x58 Source\Drivers\Internal\text_lcd.o
+ .text.Text_LCD_Send_String
+                0x0000000000000000       0x68 Source\Drivers\Internal\text_lcd.o
+ .sdata.row_select
+                0x0000000000000000        0x4 Source\Drivers\Internal\text_lcd.o
+ .text          0x0000000000000000        0x0 Source\Drivers\Internal\spi.o
+ .data          0x0000000000000000        0x0 Source\Drivers\Internal\spi.o
+ .bss           0x0000000000000000        0x0 Source\Drivers\Internal\spi.o
+ .reginfo       0x0000000000000000       0x18 Source\Drivers\Internal\spi.o
+ .pdr           0x0000000000000000       0x60 Source\Drivers\Internal\spi.o
+ .text.SPI_Ready
+                0x0000000000000000       0x20 Source\Drivers\Internal\spi.o
+ .text          0x0000000000000000        0x0 Source\Drivers\Internal\segment.o
+ .data          0x0000000000000000        0x0 Source\Drivers\Internal\segment.o
+ .bss           0x0000000000000000        0x0 Source\Drivers\Internal\segment.o
+ .reginfo       0x0000000000000000       0x18 Source\Drivers\Internal\segment.o
+ .pdr           0x0000000000000000       0xa0 Source\Drivers\Internal\segment.o
+ .text.Segment_Disable
+                0x0000000000000000       0x98 Source\Drivers\Internal\segment.o
+ .text          0x0000000000000000        0x0 Source\Drivers\Internal\pwm.o
+ .data          0x0000000000000000        0x0 Source\Drivers\Internal\pwm.o
+ .bss           0x0000000000000000        0x0 Source\Drivers\Internal\pwm.o
+ .reginfo       0x0000000000000000       0x18 Source\Drivers\Internal\pwm.o
+ .pdr           0x0000000000000000       0xa0 Source\Drivers\Internal\pwm.o
+ .text.PWM_Enable
+                0x0000000000000000       0x20 Source\Drivers\Internal\pwm.o
+ .text.PWM_Disable
+                0x0000000000000000       0x20 Source\Drivers\Internal\pwm.o
+ .text.PWM_Reset
+                0x0000000000000000       0x30 Source\Drivers\Internal\pwm.o
+ .text.PWM_Set_Clock_Divider
+                0x0000000000000000       0x14 Source\Drivers\Internal\pwm.o
+ .rodata.str1.4
+                0x0000000000000000       0x24 Source\Drivers\Internal\pwm.o
+ .text.PWM_Set_Duty_Cycle
+                0x0000000000000000       0xa8 Source\Drivers\Internal\pwm.o
+ .sdata.channel_duty_cycle
+                0x0000000000000000        0x8 Source\Drivers\Internal\pwm.o
+ .text          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .pdr           0x0000000000000000      0x280 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text.Device_Add_Loc
+                0x0000000000000000       0x3c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text.Device_Remove
+                0x0000000000000000       0x84 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text.Device_Remove_Loc
+                0x0000000000000000       0x30 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._close_r
+                0x0000000000000000       0x4c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._write_r
+                0x0000000000000000       0x4c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._read_r  0x0000000000000000       0x4c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._stat_r  0x0000000000000000       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._fstat_r
+                0x0000000000000000       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._link_r  0x0000000000000000       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._unlink_r
+                0x0000000000000000       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._lseek_r
+                0x0000000000000000        0x8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._isatty_r
+                0x0000000000000000        0x8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._execve_r
+                0x0000000000000000       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._fork_r  0x0000000000000000       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._getpid_r
+                0x0000000000000000        0x8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._kill_r  0x0000000000000000       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._wait_r  0x0000000000000000        0x8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._sbrk_r  0x0000000000000000       0x5c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text._open_r  0x0000000000000000       0xdc c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .sbss.heap.1772
+                0x0000000000000000        0x4 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .text          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .text.__errno  0x0000000000000000        0xc c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .sdata         0x0000000000000000        0x8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .rodata.str1.4
+                0x0000000000000000        0x4 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000      0x428 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .text.strcmp   0x0000000000000000       0x7c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .text          0x0000000000000000      0x5a4 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .pdr           0x0000000000000000       0x60 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .text          0x0000000000000000      0x318 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .text          0x0000000000000000       0xd4 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .rodata.cst8   0x0000000000000000        0x8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .text          0x0000000000000000       0xf8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .text          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .rodata        0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .text          0x0000000000000000       0x40 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .text          0x0000000000000000       0xb0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .text          0x0000000000000000      0x298 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .text          0x0000000000000000      0x108 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .text          0x0000000000000000       0x44 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .text          0x0000000000000000       0x40 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .pdr           0x0000000000000000       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .text          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+ .data          0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+ .bss           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+ .reginfo       0x0000000000000000       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+ .rodata        0x0000000000000000      0x100 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+Flash            0x0000000000000000 0x0000000000400000 xr
+Code             0x0000000020000000 0x0000000000008000 rw
+Data             0x0000000040000000 0x0000000000004000 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD Source\main.o
+LOAD Source\config.o
+LOAD Source\Tasks\tasks.o
+LOAD Source\Tasks\object_detection\object_detection.o
+LOAD Source\Tasks\System_Control\system_control.o
+LOAD Source\Tasks\Read_Enc\read_enc.o
+LOAD Source\Tasks\Motor_Right\motor_right.o
+LOAD Source\Tasks\Motor_Left\motor_left.o
+LOAD Source\Tasks\Message_Sender\message_sender.o
+LOAD Source\Tasks\Flashing_LED\flashing_led.o
+LOAD Source\Tasks\Course_Corrector\course_corrector.o
+LOAD Source\Tasks\CAN_relay\can_relay.o
+LOAD Source\System\startup.o
+LOAD Source\Scheduler\Internal\scheduler.o
+LOAD Source\Scheduler\Internal\log.o
+LOAD Source\Scheduler\Internal\interrupt.o
+LOAD Source\Drivers\Internal\uart.o
+LOAD Source\Drivers\Internal\timer.o
+LOAD Source\Drivers\Internal\text_lcd.o
+LOAD Source\Drivers\Internal\spi.o
+LOAD Source\Drivers\Internal\segment.o
+LOAD Source\Drivers\Internal\pwm.o
+LOAD c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a
+LOAD c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a
+LOAD c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libm.a
+                0x0000000000000000                _stext = .
+                0x0000000000000000                PROVIDE (stext, .)
+
+.text           0x0000000020000000     0x2f98 load address 0x0000000000000000
+                0x0000000020000000                _text = .
+ *(.startup)
+ .startup       0x0000000020000000      0x158 Source\System\startup.o
+                0x0000000020000154                _exit
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.DEBUG_Assert_Failed
+                0x0000000020000158        0x8 Source\main.o
+                0x0000000020000158                DEBUG_Assert_Failed
+ .text.main     0x0000000020000160       0x38 Source\main.o
+                0x0000000020000160                main
+ .text.Tasks_Init
+                0x0000000020000198       0x54 Source\Tasks\tasks.o
+                0x0000000020000198                Tasks_Init
+ .text.object_detection_Init
+                0x00000000200001ec       0x18 Source\Tasks\object_detection\object_detection.o
+                0x00000000200001ec                object_detection_Init
+ .text.object_detection_Update
+                0x0000000020000204      0x310 Source\Tasks\object_detection\object_detection.o
+                0x0000000020000204                object_detection_Update
+ .text.System_Control_Init
+                0x0000000020000514      0x13c Source\Tasks\System_Control\system_control.o
+                0x0000000020000514                System_Control_Init
+ .text.System_Control_Update
+                0x0000000020000650      0x208 Source\Tasks\System_Control\system_control.o
+                0x0000000020000650                System_Control_Update
+ .text.Read_Enc_Init
+                0x0000000020000858       0xa8 Source\Tasks\Read_Enc\read_enc.o
+                0x0000000020000858                Read_Enc_Init
+ .text.Read_Enc_Update
+                0x0000000020000900      0x18c Source\Tasks\Read_Enc\read_enc.o
+                0x0000000020000900                Read_Enc_Update
+ .text.speedControlRight
+                0x0000000020000a8c       0x8c Source\Tasks\Motor_Right\motor_right.o
+                0x0000000020000a8c                speedControlRight
+ .text.visualsRt
+                0x0000000020000b18      0x18c Source\Tasks\Motor_Right\motor_right.o
+                0x0000000020000b18                visualsRt
+ .text.Motor_Right_Update
+                0x0000000020000ca4      0x100 Source\Tasks\Motor_Right\motor_right.o
+                0x0000000020000ca4                Motor_Right_Update
+ .text.Motor_Right_Init
+                0x0000000020000da4       0xe4 Source\Tasks\Motor_Right\motor_right.o
+                0x0000000020000da4                Motor_Right_Init
+ .text.visualsLf
+                0x0000000020000e88      0x124 Source\Tasks\Motor_Left\motor_left.o
+                0x0000000020000e88                visualsLf
+ .text.Motor_Left_Update
+                0x0000000020000fac       0xd4 Source\Tasks\Motor_Left\motor_left.o
+                0x0000000020000fac                Motor_Left_Update
+ .text.Motor_Left_Init
+                0x0000000020001080       0xe4 Source\Tasks\Motor_Left\motor_left.o
+                0x0000000020001080                Motor_Left_Init
+ .text.spi_receive_CAN
+                0x0000000020001164       0xe4 Source\Tasks\Message_Sender\message_sender.o
+                0x0000000020001164                spi_receive_CAN
+ .text.spi_buffer_CAN
+                0x0000000020001248       0xc8 Source\Tasks\Message_Sender\message_sender.o
+                0x0000000020001248                spi_buffer_CAN
+ .text.Message_Sender_Update
+                0x0000000020001310      0x664 Source\Tasks\Message_Sender\message_sender.o
+                0x0000000020001310                Message_Sender_Update
+ .text.Message_Sender_Init
+                0x0000000020001974       0xb0 Source\Tasks\Message_Sender\message_sender.o
+                0x0000000020001974                Message_Sender_Init
+ .text.Flashing_LED_Init
+                0x0000000020001a24       0x58 Source\Tasks\Flashing_LED\flashing_led.o
+                0x0000000020001a24                Flashing_LED_Init
+ .text.Flashing_LED_Toggle
+                0x0000000020001a7c       0x8c Source\Tasks\Flashing_LED\flashing_led.o
+                0x0000000020001a7c                Flashing_LED_Toggle
+ .text.Course_Corrector_Init
+                0x0000000020001b08        0xc Source\Tasks\Course_Corrector\course_corrector.o
+                0x0000000020001b08                Course_Corrector_Init
+ .text.Course_Corrector_Update
+                0x0000000020001b14       0x5c Source\Tasks\Course_Corrector\course_corrector.o
+                0x0000000020001b14                Course_Corrector_Update
+ .text.CAN_relay_Init
+                0x0000000020001b70       0x5c Source\Tasks\CAN_relay\can_relay.o
+                0x0000000020001b70                CAN_relay_Init
+ .text.readCAN  0x0000000020001bcc       0x5c Source\Tasks\CAN_relay\can_relay.o
+                0x0000000020001bcc                readCAN
+ .text.constructCANEnc
+                0x0000000020001c28       0x44 Source\Tasks\CAN_relay\can_relay.o
+                0x0000000020001c28                constructCANEnc
+ .text.CAN_relay_Update
+                0x0000000020001c6c       0xcc Source\Tasks\CAN_relay\can_relay.o
+                0x0000000020001c6c                CAN_relay_Update
+ .text.Handler  0x0000000020001d38       0x7c Source\System\startup.o
+                0x0000000020001d38                Handler
+                0x0000000020001d60                End_Handler
+                0x0000000020001d70                Excpt_Unused
+                0x0000000020001d78                Excpt_IAbort
+                0x0000000020001d84                Excpt_DAbort
+                0x0000000020001d8c                Excpt_Syscall
+                0x0000000020001d94                Excpt_UndefInst
+                0x0000000020001d9c                Excpt_Overflow
+                0x0000000020001da4                Excpt_CoPro
+                0x0000000020001dac                Excpt_Break
+ .text.InterruptHandler
+                0x0000000020001db4      0x134 Source\System\startup.o
+                0x0000000020001db4                InterruptHandler
+                0x0000000020001ee4                End_IRQ_Ptr
+ .text.Enable_Interrupts
+                0x0000000020001ee8       0x30 Source\System\startup.o
+                0x0000000020001ee8                Enable_Interrupts
+ .text.Disable_Interrupts
+                0x0000000020001f18       0x38 Source\System\startup.o
+                0x0000000020001f18                Disable_Interrupts
+ .text.Enter_Sleep_Mode
+                0x0000000020001f50       0x28 Source\System\startup.o
+                0x0000000020001f50                Enter_Sleep_Mode
+                0x0000000020001f60                Sleep_Ptr
+ .text.LOG_Trigger_Breakpoint
+                0x0000000020001f78        0x8 Source\System\startup.o
+                0x0000000020001f78                LOG_Trigger_Breakpoint
+ .text.Scheduler_Tick
+                0x0000000020001f80      0x128 Source\Scheduler\Internal\scheduler.o
+                0x0000000020001f80                Scheduler_Tick
+                0x0000000020002054                Hybrid_End_Label
+ .text.Scheduler_Dispatch
+                0x00000000200020a8      0x15c Source\Scheduler\Internal\scheduler.o
+                0x00000000200020a8                Scheduler_Dispatch
+                0x0000000020002168                Task_End_Label
+ .text.Shutdown_System
+                0x0000000020002204       0x1c Source\Scheduler\Internal\scheduler.o
+                0x0000000020002204                Shutdown_System
+ .text.Scheduler_Start
+                0x0000000020002220       0x28 Source\Scheduler\Internal\scheduler.o
+                0x0000000020002220                Scheduler_Start
+ .text.Scheduler_Init
+                0x0000000020002248       0x84 Source\Scheduler\Internal\scheduler.o
+                0x0000000020002248                Scheduler_Init
+ .text.Write_32
+                0x00000000200022cc       0x78 Source\Scheduler\Internal\log.o
+                0x00000000200022cc                Write_32
+ .text.Set_Watch
+                0x0000000020002344       0x98 Source\Scheduler\Internal\log.o
+                0x0000000020002344                Set_Watch
+ .text.Get_Watch
+                0x00000000200023dc       0xa8 Source\Scheduler\Internal\log.o
+                0x00000000200023dc                Get_Watch
+ .text.Log_Reset_Addresses
+                0x0000000020002484       0x40 Source\Scheduler\Internal\log.o
+                0x0000000020002484                Log_Reset_Addresses
+ .text.Log_Idle
+                0x00000000200024c4       0x28 Source\Scheduler\Internal\log.o
+                0x00000000200024c4                Log_Idle
+ .text.Log_Set_Address
+                0x00000000200024ec       0x80 Source\Scheduler\Internal\log.o
+                0x00000000200024ec                Log_Set_Address
+ .text.Check_Buffer
+                0x000000002000256c       0x54 Source\Scheduler\Internal\log.o
+                0x000000002000256c                Check_Buffer
+ .text.Log_Task_Address
+                0x00000000200025c0       0x98 Source\Scheduler\Internal\log.o
+                0x00000000200025c0                Log_Task_Address
+ .text.Log_ISR_Time
+                0x0000000020002658       0xe8 Source\Scheduler\Internal\log.o
+                0x0000000020002658                Log_ISR_Time
+ .text.Log_Tick_Start
+                0x0000000020002740       0x78 Source\Scheduler\Internal\log.o
+                0x0000000020002740                Log_Tick_Start
+ .text.Log_Hybrid_End
+                0x00000000200027b8       0x30 Source\Scheduler\Internal\log.o
+                0x00000000200027b8                Log_Hybrid_End
+ .text.Log_Hybrid_Start
+                0x00000000200027e8       0x30 Source\Scheduler\Internal\log.o
+                0x00000000200027e8                Log_Hybrid_Start
+ .text.Log_Time
+                0x0000000020002818       0xc0 Source\Scheduler\Internal\log.o
+                0x0000000020002818                Log_Time
+ .text.Log_Task_End
+                0x00000000200028d8       0x30 Source\Scheduler\Internal\log.o
+                0x00000000200028d8                Log_Task_End
+ .text.Log_Task_Start
+                0x0000000020002908       0x30 Source\Scheduler\Internal\log.o
+                0x0000000020002908                Log_Task_Start
+ .text.Log_Init
+                0x0000000020002938       0xf4 Source\Scheduler\Internal\log.o
+                0x0000000020002938                Log_Init
+ .text.Log_Tick_End
+                0x0000000020002a2c       0x7c Source\Scheduler\Internal\log.o
+                0x0000000020002a2c                Log_Tick_End
+ .text.Init_Interrupt
+                0x0000000020002aa8       0x24 Source\Scheduler\Internal\interrupt.o
+                0x0000000020002aa8                Init_Interrupt
+ .text.Handle_Interrupts
+                0x0000000020002acc        0x8 Source\Scheduler\Internal\interrupt.o
+                0x0000000020002acc                Handle_Interrupts
+ .text.Enable_Interrupt
+                0x0000000020002ad4       0x38 Source\Scheduler\Internal\interrupt.o
+                0x0000000020002ad4                Enable_Interrupt
+ .text.Disable_Interrupt
+                0x0000000020002b0c       0x28 Source\Scheduler\Internal\interrupt.o
+                0x0000000020002b0c                Disable_Interrupt
+ .text.Timer_Init
+                0x0000000020002b34       0xc0 Source\Drivers\Internal\timer.o
+                0x0000000020002b34                Timer_Init
+ .text.Timer_Start
+                0x0000000020002bf4       0x28 Source\Drivers\Internal\timer.o
+                0x0000000020002bf4                Timer_Start
+ .text.SPI_Init
+                0x0000000020002c1c       0x34 Source\Drivers\Internal\spi.o
+                0x0000000020002c1c                SPI_Init
+ .text.SPI_Swap
+                0x0000000020002c50       0x50 Source\Drivers\Internal\spi.o
+                0x0000000020002c50                SPI_Swap
+ .text.Segment_Clear_Decimal
+                0x0000000020002ca0       0x98 Source\Drivers\Internal\segment.o
+                0x0000000020002ca0                Segment_Clear_Decimal
+ .text.Segment_Set_Decimal
+                0x0000000020002d38       0x94 Source\Drivers\Internal\segment.o
+                0x0000000020002d38                Segment_Set_Decimal
+ .text.Segment_Write
+                0x0000000020002dcc       0xb4 Source\Drivers\Internal\segment.o
+                0x0000000020002dcc                Segment_Write
+ .text.Segment_Enable
+                0x0000000020002e80       0x94 Source\Drivers\Internal\segment.o
+                0x0000000020002e80                Segment_Enable
+ .text.Device_Add
+                0x0000000020002f14       0x84 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+                0x0000000020002f14                Device_Add
+ *(.init .init.*)
+ *(.fini .fini.*)
+
+.rel.dyn        0x0000000020002f98        0x0 load address 0x0000000000002f98
+ .rel.dyn       0x0000000000000000        0x0 Source\config.o
+                0x0000000020002f98                . = ALIGN (0x4)
+                0x0000000020002f98                _etext = .
+                0x0000000020002f98                PROVIDE (etext, .)
+
+.data           0x0000000040000000      0x1a0 load address 0x0000000000002f98
+                0x0000000040000000                _data = .
+                0x0000000040000000                PROVIDE (data, .)
+ *(.sdata.config* .data.config*)
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x0000000040000000       0x28 Source\Drivers\Internal\segment.o
+ .rodata.segment_decimal
+                0x0000000040000028       0x10 Source\Drivers\Internal\segment.o
+ .rodata.segment_value
+                0x0000000040000038       0x10 Source\Drivers\Internal\segment.o
+ .rodata.segment_enabled
+                0x0000000040000048       0x10 Source\Drivers\Internal\segment.o
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.Tasks    0x0000000040000058       0xd8 Source\config.o
+                0x0000000040000058                Tasks
+ .data.USR_Stk_Val
+                0x0000000040000130        0x4 Source\System\startup.o
+                0x0000000040000130                USR_Stk_Val
+ .data.INT_Stk_Val
+                0x0000000040000134        0x4 Source\System\startup.o
+                0x0000000040000134                INT_Stk_Val
+ .data.TableBase
+                0x0000000040000138       0x40 Source\System\startup.o
+                0x0000000040000138                TableBase
+ *(.eh_frame .eh_frame.*)
+ *(.rdata .rdata.*)
+ *(.jcr .jcr.*)
+ *(.sdata .sdata.*)
+ .sdata.Config_Num_Tasks
+                0x0000000040000178        0x4 Source\config.o
+                0x0000000040000178                Config_Num_Tasks
+ .sdata.displayA
+                0x000000004000017c        0x4 Source\Tasks\Motor_Right\motor_right.o
+ .sdata.displayB
+                0x0000000040000180        0x4 Source\Tasks\Motor_Right\motor_right.o
+ .sdata.displayC
+                0x0000000040000184        0x4 Source\Tasks\Motor_Right\motor_right.o
+ .sdata.displayD
+                0x0000000040000188        0x4 Source\Tasks\Motor_Right\motor_right.o
+ .sdata.displayC
+                0x000000004000018c        0x4 Source\Tasks\Motor_Left\motor_left.o
+ .sdata.displayD
+                0x0000000040000190        0x4 Source\Tasks\Motor_Left\motor_left.o
+ .sdata.idle_index
+                0x0000000040000194        0x4 Source\Scheduler\Internal\log.o
+ .sdata.log_char
+                0x0000000040000198        0x8 Source\Scheduler\Internal\log.o
+                0x00000000400001a0                . = ALIGN (0x4)
+                0x00000000400001a0                _edata = .
+                0x00000000400001a0                PROVIDE (edata, .)
+                0x00000000400001a0                _gp = ABSOLUTE (.)
+
+.bss            0x00000000400001a0      0x830 load address 0x0000000000003138
+                0x00000000400001a0                _bss = .
+                0x00000000400001a0                PROVIDE (bss, .)
+ *(.sbss .sbss.*)
+ .sbss.stop.1315
+                0x00000000400001a0        0x2 Source\Tasks\object_detection\object_detection.o
+ *fill*         0x00000000400001a2        0x2 00
+ .sbss.led_state
+                0x00000000400001a4        0x4 Source\Tasks\Flashing_LED\flashing_led.o
+ .sbss.current_task
+                0x00000000400001a8        0x4 Source\Scheduler\Internal\scheduler.o
+ .sbss.system_time
+                0x00000000400001ac        0x4 Source\Scheduler\Internal\scheduler.o
+ .sbss.single_tick_time
+                0x00000000400001b0        0x4 Source\Scheduler\Internal\scheduler.o
+ .sbss.last_index
+                0x00000000400001b4        0x4 Source\Scheduler\Internal\log.o
+ .sbss.previous_time
+                0x00000000400001b8        0x4 Source\Scheduler\Internal\log.o
+ .sbss.previous_isr_time
+                0x00000000400001bc        0x4 Source\Scheduler\Internal\log.o
+ .sbss.current_tick
+                0x00000000400001c0        0x4 Source\Scheduler\Internal\log.o
+ .sbss.buffer_index
+                0x00000000400001c4        0x4 Source\Scheduler\Internal\log.o
+ .sbss.nesting_level
+                0x00000000400001c8        0x4 Source\Scheduler\Internal\interrupt.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.device_list
+                0x00000000400001cc       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ *(.scommon .scommon.*)
+ .scommon       0x00000000400001dc       0xb5 Source\config.o
+                0x00000000400001dc                Target_counts_Left_G
+                0x00000000400001e0                Motor_Lf_Enc_Track
+                0x00000000400001e4                Opponent_detected
+                0x00000000400001e8                next_x_map_pos_G
+                0x00000000400001ec                robot_x_map_pos_G
+                0x00000000400001f0                next_y_map_pos_G
+                0x00000000400001f4                Orientation_G
+                0x00000000400001f8                next_distance_G
+                0x00000000400001fc                next_x_coord_G
+                0x0000000040000200                robot_x_coord_G
+                0x0000000040000204                Course_correction_Rt
+                0x0000000040000208                canIDRt
+                0x000000004000020c                candataLf
+                0x0000000040000214                Course_correction_Lf
+                0x0000000040000218                canIDSensors
+                0x000000004000021c                robot_y_map_pos_G
+                0x0000000040000220                delta_x
+                0x0000000040000224                Right_motor_direction_G
+                0x0000000040000228                WheelCounts_Left_G
+                0x000000004000022c                robot_y_coord_G
+                0x0000000040000230                opp_x_coord_G
+                0x0000000040000234                Left_motor_direction_G
+                0x0000000040000238                candataRt
+                0x0000000040000240                heading_radians_G
+                0x0000000040000244                Pathdriver_Control_G
+                0x0000000040000248                candataEnc
+                0x0000000040000250                Left_motor_speed_G
+                0x0000000040000252                Right_motor_speed_G
+                0x0000000040000254                next_wheel_counts_G
+                0x0000000040000258                next_y_coord_G
+                0x000000004000025c                delta_y
+                0x0000000040000260                Team_Colour
+                0x0000000040000264                Target_counts_Right_G
+                0x0000000040000268                WheelCounts_Right_G
+                0x000000004000026c                Pathfinder_Control_G
+                0x0000000040000270                Strategy_G
+                0x0000000040000274                opp_y_coord_G
+                0x0000000040000278                Motor_Rt_Enc_Track
+                0x000000004000027c                Script_update
+                0x0000000040000280                Script_no_G
+                0x0000000040000284                End_Of_MoveRt
+                0x0000000040000288                canIDLf
+                0x000000004000028c                movement_G
+                0x0000000040000290                Path_no_G
+ .scommon       0x0000000040000291        0x0 Source\Tasks\tasks.o
+ *fill*         0x0000000040000291        0x3 00
+ .scommon       0x0000000040000294       0x10 Source\Tasks\object_detection\object_detection.o
+                0x0000000040000294                nextMove
+                0x0000000040000298                objectFollower
+                0x000000004000029c                avoidance
+                0x00000000400002a0                lastAvoidance
+ .scommon       0x00000000400002a4        0x5 Source\Tasks\System_Control\system_control.o
+                0x00000000400002a4                System_Mode_G
+                0x00000000400002a8                debounce
+ *fill*         0x00000000400002a9        0x3 00
+ .scommon       0x00000000400002ac       0x44 Source\Tasks\Read_Enc\read_enc.o
+                0x00000000400002ac                WheelCount
+                0x00000000400002b4                EncSignal_A
+                0x00000000400002bc                RevCount
+                0x00000000400002c4                EncSignal_B
+                0x00000000400002cc                EncoderCount
+                0x00000000400002d4                bufferTime
+                0x00000000400002d8                WheelDirection
+                0x00000000400002e0                Pulse_Flag
+                0x00000000400002e8                CountError_Flag
+ .scommon       0x00000000400002f0        0x8 Source\Tasks\Motor_Right\motor_right.o
+                0x00000000400002f0                Enc_Rt_Old
+                0x00000000400002f4                Enc_Rt_Diff
+ .scommon       0x00000000400002f8        0x8 Source\Tasks\Motor_Left\motor_left.o
+                0x00000000400002f8                Enc_Lf_Diff
+                0x00000000400002fc                Enc_Lf_Old
+ .scommon       0x0000000040000300       0x32 Source\Tasks\Message_Sender\message_sender.o
+                0x0000000040000300                RX0_ID_Bytes
+                0x0000000040000308                EXT_ID_Bytes
+                0x000000004000030d                speedPin
+                0x0000000040000310                init
+                0x0000000040000314                RX1_ID_Bytes
+                0x000000004000031c                RX_Buffer_ID_Bytes
+                0x0000000040000324                PAD_ID
+                0x0000000040000328                RX_Buffer_Data_array
+                0x0000000040000330                ticked
+ .scommon       0x0000000040000332        0x0 Source\Tasks\Flashing_LED\flashing_led.o
+ .scommon       0x0000000040000332        0x0 Source\Tasks\Course_Corrector\course_corrector.o
+ .scommon       0x0000000040000332        0x7 Source\Tasks\CAN_relay\can_relay.o
+                0x0000000040000332                motor_direction_Rt
+                0x0000000040000334                motor_speed_Rt
+                0x0000000040000336                motor_speed_Lf
+                0x0000000040000338                motor_direction_Lf
+ *(COMMON)
+ *fill*         0x0000000040000339        0x3 00
+ COMMON         0x000000004000033c      0x2ac Source\config.o
+                0x000000004000033c                Path_G
+                0x00000000400003bc                bufferRX0
+                0x00000000400003cc                bufferRX1
+                0x00000000400003dc                sensorReadings
+                0x00000000400003e8                Script_G
+ COMMON         0x00000000400005e8      0x3e8 Source\Scheduler\Internal\log.o
+                0x00000000400005e8                Log_Buffer
+                0x00000000400009d0                _ebss = .
+                0x00000000400009d0                PROVIDE (ebss, .)
+
+.log
+ *(.log)
+                0x00000000400009d0                _end = .
+                0x00000000400009d0                PROVIDE (end, .)
+                0x00000000400009d0                PROVIDE (_heap_start, .)
+
+.stack          0x0000000040003600      0xa00
+                0x0000000040003600                PROVIDE (_heap_end, .)
+ *(.stack .stack.*)
+ .stack.Stack_G
+                0x0000000040003600      0xa00 Source\System\startup.o
+                0x0000000040003600                Stack_G
+LOAD c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a
+LOAD c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a
+OUTPUT(Telemetrons_CloudRobotics2013.elf elf32-littlemips)
+
+.reginfo        0x0000000000000000       0x18
+ .reginfo       0x0000000000000000       0x18 Source\main.o
+
+.mdebug.abi32   0x0000000000000000        0x0
+ .mdebug.abi32  0x0000000000000000        0x0 Source\main.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\config.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\tasks.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\object_detection\object_detection.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\System_Control\system_control.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\Read_Enc\read_enc.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\Motor_Right\motor_right.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\Motor_Left\motor_left.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\Message_Sender\message_sender.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\Flashing_LED\flashing_led.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\Course_Corrector\course_corrector.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Tasks\CAN_relay\can_relay.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Scheduler\Internal\scheduler.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Scheduler\Internal\log.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Scheduler\Internal\interrupt.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Drivers\Internal\uart.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Drivers\Internal\timer.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Drivers\Internal\text_lcd.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Drivers\Internal\spi.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Drivers\Internal\segment.o
+ .mdebug.abi32  0x0000000000000000        0x0 Source\Drivers\Internal\pwm.o
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.comment        0x0000000000000000       0x23
+ .comment       0x0000000000000000       0x11 Source\main.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000000       0x12 Source\config.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\tasks.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\object_detection\object_detection.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\System_Control\system_control.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\Read_Enc\read_enc.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\Motor_Right\motor_right.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\Motor_Left\motor_left.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\Message_Sender\message_sender.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\Flashing_LED\flashing_led.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\Course_Corrector\course_corrector.o
+ .comment       0x0000000000000000       0x12 Source\Tasks\CAN_relay\can_relay.o
+ .comment       0x0000000000000000       0x12 Source\Scheduler\Internal\scheduler.o
+ .comment       0x0000000000000000       0x12 Source\Scheduler\Internal\log.o
+ .comment       0x0000000000000000       0x12 Source\Scheduler\Internal\interrupt.o
+ .comment       0x0000000000000000       0x12 Source\Drivers\Internal\uart.o
+ .comment       0x0000000000000000       0x12 Source\Drivers\Internal\timer.o
+ .comment       0x0000000000000000       0x12 Source\Drivers\Internal\text_lcd.o
+ .comment       0x0000000000000000       0x12 Source\Drivers\Internal\spi.o
+ .comment       0x0000000000000000       0x12 Source\Drivers\Internal\segment.o
+ .comment       0x0000000000000000       0x12 Source\Drivers\Internal\pwm.o
+ .comment       0x0000000000000011       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .comment       0x0000000000000000       0x12 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ .gnu.attributes
+                0x0000000000000000       0x10 Source\main.o
+ .gnu.attributes
+                0x0000000000000010       0x10 Source\config.o
+ .gnu.attributes
+                0x0000000000000020       0x10 Source\Tasks\tasks.o
+ .gnu.attributes
+                0x0000000000000030       0x10 Source\Tasks\object_detection\object_detection.o
+ .gnu.attributes
+                0x0000000000000040       0x10 Source\Tasks\System_Control\system_control.o
+ .gnu.attributes
+                0x0000000000000050       0x10 Source\Tasks\Read_Enc\read_enc.o
+ .gnu.attributes
+                0x0000000000000060       0x10 Source\Tasks\Motor_Right\motor_right.o
+ .gnu.attributes
+                0x0000000000000070       0x10 Source\Tasks\Motor_Left\motor_left.o
+ .gnu.attributes
+                0x0000000000000080       0x10 Source\Tasks\Message_Sender\message_sender.o
+ .gnu.attributes
+                0x0000000000000090       0x10 Source\Tasks\Flashing_LED\flashing_led.o
+ .gnu.attributes
+                0x00000000000000a0       0x10 Source\Tasks\Course_Corrector\course_corrector.o
+ .gnu.attributes
+                0x00000000000000b0       0x10 Source\Tasks\CAN_relay\can_relay.o
+ .gnu.attributes
+                0x00000000000000c0       0x10 Source\Scheduler\Internal\scheduler.o
+ .gnu.attributes
+                0x00000000000000d0       0x10 Source\Scheduler\Internal\log.o
+ .gnu.attributes
+                0x00000000000000e0       0x10 Source\Scheduler\Internal\interrupt.o
+ .gnu.attributes
+                0x00000000000000f0       0x10 Source\Drivers\Internal\uart.o
+ .gnu.attributes
+                0x0000000000000100       0x10 Source\Drivers\Internal\timer.o
+ .gnu.attributes
+                0x0000000000000110       0x10 Source\Drivers\Internal\text_lcd.o
+ .gnu.attributes
+                0x0000000000000120       0x10 Source\Drivers\Internal\spi.o
+ .gnu.attributes
+                0x0000000000000130       0x10 Source\Drivers\Internal\segment.o
+ .gnu.attributes
+                0x0000000000000140       0x10 Source\Drivers\Internal\pwm.o
+ .gnu.attributes
+                0x0000000000000150       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .gnu.attributes
+                0x0000000000000160       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .gnu.attributes
+                0x0000000000000170       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .gnu.attributes
+                0x0000000000000180       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .gnu.attributes
+                0x0000000000000190       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .gnu.attributes
+                0x00000000000001a0       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .gnu.attributes
+                0x00000000000001b0       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .gnu.attributes
+                0x00000000000001c0       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .gnu.attributes
+                0x00000000000001d0       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .gnu.attributes
+                0x00000000000001e0       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .gnu.attributes
+                0x00000000000001f0       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .gnu.attributes
+                0x0000000000000200       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .gnu.attributes
+                0x0000000000000210       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .gnu.attributes
+                0x0000000000000220       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .gnu.attributes
+                0x0000000000000230       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .gnu.attributes
+                0x0000000000000240       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.pdr            0x0000000000000000        0x0
+ .pdr           0x0000000000000000        0x0 Source\config.o
+ .pdr           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .pdr           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .pdr           0x0000000000000000        0x0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.debug_abbrev   0x0000000000000000     0x33d1
+ .debug_abbrev  0x0000000000000000       0xd5 Source\main.o
+ .debug_abbrev  0x00000000000000d5      0x107 Source\config.o
+ .debug_abbrev  0x00000000000001dc       0xe9 Source\Tasks\tasks.o
+ .debug_abbrev  0x00000000000002c5      0x11e Source\Tasks\object_detection\object_detection.o
+ .debug_abbrev  0x00000000000003e3      0x14a Source\Tasks\System_Control\system_control.o
+ .debug_abbrev  0x000000000000052d      0x155 Source\Tasks\Read_Enc\read_enc.o
+ .debug_abbrev  0x0000000000000682      0x1d5 Source\Tasks\Motor_Right\motor_right.o
+ .debug_abbrev  0x0000000000000857      0x1ad Source\Tasks\Motor_Left\motor_left.o
+ .debug_abbrev  0x0000000000000a04      0x240 Source\Tasks\Message_Sender\message_sender.o
+ .debug_abbrev  0x0000000000000c44      0x170 Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_abbrev  0x0000000000000db4      0x128 Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_abbrev  0x0000000000000edc      0x188 Source\Tasks\CAN_relay\can_relay.o
+ .debug_abbrev  0x0000000000001064       0x12 Source\System\startup.o
+ .debug_abbrev  0x0000000000001076      0x1a4 Source\Scheduler\Internal\scheduler.o
+ .debug_abbrev  0x000000000000121a      0x292 Source\Scheduler\Internal\log.o
+ .debug_abbrev  0x00000000000014ac      0x19b Source\Scheduler\Internal\interrupt.o
+ .debug_abbrev  0x0000000000001647      0x23e Source\Drivers\Internal\uart.o
+ .debug_abbrev  0x0000000000001885      0x1a7 Source\Drivers\Internal\timer.o
+ .debug_abbrev  0x0000000000001a2c      0x20c Source\Drivers\Internal\text_lcd.o
+ .debug_abbrev  0x0000000000001c38      0x165 Source\Drivers\Internal\spi.o
+ .debug_abbrev  0x0000000000001d9d       0xf8 Source\Drivers\Internal\segment.o
+ .debug_abbrev  0x0000000000001e95      0x10a Source\Drivers\Internal\pwm.o
+ .debug_abbrev  0x0000000000001f9f      0x24b c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_abbrev  0x00000000000021ea      0x16c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_abbrev  0x0000000000002356      0x162 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x00000000000024b8       0xa7 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_abbrev  0x000000000000255f      0x1d9 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_abbrev  0x0000000000002738      0x1f7 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_abbrev  0x000000000000292f      0x148 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_abbrev  0x0000000000002a77      0x17f c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .debug_abbrev  0x0000000000002bf6       0xc3 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .debug_abbrev  0x0000000000002cb9       0xd0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .debug_abbrev  0x0000000000002d89       0xb3 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x0000000000002e3c      0x1c0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .debug_abbrev  0x0000000000002ffc      0x163 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .debug_abbrev  0x000000000000315f      0x104 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x0000000000003263      0x104 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .debug_abbrev  0x0000000000003367       0x6a c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.debug_info     0x0000000000000000     0xe70e
+ .debug_info    0x0000000000000000      0x150 Source\main.o
+ .debug_info    0x0000000000000150      0x7dc Source\config.o
+ .debug_info    0x000000000000092c      0x709 Source\Tasks\tasks.o
+ .debug_info    0x0000000000001035      0x7bf Source\Tasks\object_detection\object_detection.o
+ .debug_info    0x00000000000017f4      0xb7f Source\Tasks\System_Control\system_control.o
+ .debug_info    0x0000000000002373      0xb04 Source\Tasks\Read_Enc\read_enc.o
+ .debug_info    0x0000000000002e77      0xbb0 Source\Tasks\Motor_Right\motor_right.o
+ .debug_info    0x0000000000003a27      0xb62 Source\Tasks\Motor_Left\motor_left.o
+ .debug_info    0x0000000000004589     0x101c Source\Tasks\Message_Sender\message_sender.o
+ .debug_info    0x00000000000055a5      0xa82 Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_info    0x0000000000006027      0x9d5 Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_info    0x00000000000069fc      0xa87 Source\Tasks\CAN_relay\can_relay.o
+ .debug_info    0x0000000000007483       0x62 Source\System\startup.o
+ .debug_info    0x00000000000074e5      0x375 Source\Scheduler\Internal\scheduler.o
+ .debug_info    0x000000000000785a      0x7ce Source\Scheduler\Internal\log.o
+ .debug_info    0x0000000000008028      0x3ad Source\Scheduler\Internal\interrupt.o
+ .debug_info    0x00000000000083d5      0xee5 Source\Drivers\Internal\uart.o
+ .debug_info    0x00000000000092ba      0x5b8 Source\Drivers\Internal\timer.o
+ .debug_info    0x0000000000009872      0x6ff Source\Drivers\Internal\text_lcd.o
+ .debug_info    0x0000000000009f71      0x24d Source\Drivers\Internal\spi.o
+ .debug_info    0x000000000000a1be      0x293 Source\Drivers\Internal\segment.o
+ .debug_info    0x000000000000a451      0x1f3 Source\Drivers\Internal\pwm.o
+ .debug_info    0x000000000000a644     0x11b3 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_info    0x000000000000b7f7      0x95f c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_info    0x000000000000c156      0x96c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .debug_info    0x000000000000cac2      0x12b c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_info    0x000000000000cbed      0x48d c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_info    0x000000000000d07a      0x47a c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_info    0x000000000000d4f4      0x214 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_info    0x000000000000d708      0x2c9 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .debug_info    0x000000000000d9d1      0x160 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .debug_info    0x000000000000db31      0x15e c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .debug_info    0x000000000000dc8f      0x12a c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .debug_info    0x000000000000ddb9      0x2f8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .debug_info    0x000000000000e0b1      0x266 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .debug_info    0x000000000000e317      0x199 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .debug_info    0x000000000000e4b0      0x199 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .debug_info    0x000000000000e649       0xc5 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.debug_line     0x0000000000000000     0x6889
+ .debug_line    0x0000000000000000      0x36a Source\main.o
+ .debug_line    0x000000000000036a      0x48e Source\config.o
+ .debug_line    0x00000000000007f8      0x3c6 Source\Tasks\tasks.o
+ .debug_line    0x0000000000000bbe      0x24d Source\Tasks\object_detection\object_detection.o
+ .debug_line    0x0000000000000e0b      0x48e Source\Tasks\System_Control\system_control.o
+ .debug_line    0x0000000000001299      0x2aa Source\Tasks\Read_Enc\read_enc.o
+ .debug_line    0x0000000000001543      0x4d9 Source\Tasks\Motor_Right\motor_right.o
+ .debug_line    0x0000000000001a1c      0x4a6 Source\Tasks\Motor_Left\motor_left.o
+ .debug_line    0x0000000000001ec2      0x707 Source\Tasks\Message_Sender\message_sender.o
+ .debug_line    0x00000000000025c9      0x2c9 Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_line    0x0000000000002892      0x49a Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_line    0x0000000000002d2c      0x332 Source\Tasks\CAN_relay\can_relay.o
+ .debug_line    0x000000000000305e      0x182 Source\System\startup.o
+ .debug_line    0x00000000000031e0      0x444 Source\Scheduler\Internal\scheduler.o
+ .debug_line    0x0000000000003624      0x597 Source\Scheduler\Internal\log.o
+ .debug_line    0x0000000000003bbb      0x411 Source\Scheduler\Internal\interrupt.o
+ .debug_line    0x0000000000003fcc      0x573 Source\Drivers\Internal\uart.o
+ .debug_line    0x000000000000453f      0x2ca Source\Drivers\Internal\timer.o
+ .debug_line    0x0000000000004809      0x2e8 Source\Drivers\Internal\text_lcd.o
+ .debug_line    0x0000000000004af1      0x1eb Source\Drivers\Internal\spi.o
+ .debug_line    0x0000000000004cdc      0x233 Source\Drivers\Internal\segment.o
+ .debug_line    0x0000000000004f0f      0x207 Source\Drivers\Internal\pwm.o
+ .debug_line    0x0000000000005116      0x65d c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_line    0x0000000000005773      0x2d4 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_line    0x0000000000005a47      0x2af c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000005cf6      0x304 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_line    0x0000000000005ffa      0x168 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_line    0x0000000000006162      0x125 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_line    0x0000000000006287       0xbf c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_line    0x0000000000006346       0xad c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .debug_line    0x00000000000063f3       0x79 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .debug_line    0x000000000000646c       0x7b c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .debug_line    0x00000000000064e7       0x91 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .debug_line    0x0000000000006578       0xde c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .debug_line    0x0000000000006656       0xc6 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .debug_line    0x000000000000671c       0x84 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .debug_line    0x00000000000067a0       0x84 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .debug_line    0x0000000000006824       0x65 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.debug_macinfo  0x0000000000000000    0x533b2
+ .debug_macinfo
+                0x0000000000000000     0x28ce Source\main.o
+ .debug_macinfo
+                0x00000000000028ce     0x2cf3 Source\config.o
+ .debug_macinfo
+                0x00000000000055c1     0x2b59 Source\Tasks\tasks.o
+ .debug_macinfo
+                0x000000000000811a     0x298c Source\Tasks\object_detection\object_detection.o
+ .debug_macinfo
+                0x000000000000aaa6     0x4879 Source\Tasks\System_Control\system_control.o
+ .debug_macinfo
+                0x000000000000f31f     0x2c3e Source\Tasks\Read_Enc\read_enc.o
+ .debug_macinfo
+                0x0000000000011f5d     0x4786 Source\Tasks\Motor_Right\motor_right.o
+ .debug_macinfo
+                0x00000000000166e3     0x4785 Source\Tasks\Motor_Left\motor_left.o
+ .debug_macinfo
+                0x000000000001ae68     0x5746 Source\Tasks\Message_Sender\message_sender.o
+ .debug_macinfo
+                0x00000000000205ae     0x2c3d Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_macinfo
+                0x00000000000231eb     0x487a Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_macinfo
+                0x0000000000027a65     0x2c37 Source\Tasks\CAN_relay\can_relay.o
+ .debug_macinfo
+                0x000000000002a69c     0x28f6 Source\Scheduler\Internal\scheduler.o
+ .debug_macinfo
+                0x000000000002cf92     0x28da Source\Scheduler\Internal\log.o
+ .debug_macinfo
+                0x000000000002f86c     0x28c8 Source\Scheduler\Internal\interrupt.o
+ .debug_macinfo
+                0x0000000000032134     0x4eee Source\Drivers\Internal\uart.o
+ .debug_macinfo
+                0x0000000000037022     0x2710 Source\Drivers\Internal\timer.o
+ .debug_macinfo
+                0x0000000000039732     0x29a3 Source\Drivers\Internal\text_lcd.o
+ .debug_macinfo
+                0x000000000003c0d5     0x270e Source\Drivers\Internal\spi.o
+ .debug_macinfo
+                0x000000000003e7e3     0x2716 Source\Drivers\Internal\segment.o
+ .debug_macinfo
+                0x0000000000040ef9     0x2712 Source\Drivers\Internal\pwm.o
+ .debug_macinfo
+                0x000000000004360b     0x4fdd c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_macinfo
+                0x00000000000485e8     0x3bf5 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_macinfo
+                0x000000000004c1dd     0x36c8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .debug_macinfo
+                0x000000000004f8a5     0x3b0d c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+
+.debug_frame    0x0000000000000000      0xec0
+ .debug_frame   0x0000000000000000       0x38 Source\main.o
+ .debug_frame   0x0000000000000038       0x28 Source\Tasks\tasks.o
+ .debug_frame   0x0000000000000060       0x30 Source\Tasks\object_detection\object_detection.o
+ .debug_frame   0x0000000000000090       0x30 Source\Tasks\System_Control\system_control.o
+ .debug_frame   0x00000000000000c0       0x30 Source\Tasks\Read_Enc\read_enc.o
+ .debug_frame   0x00000000000000f0       0x88 Source\Tasks\Motor_Right\motor_right.o
+ .debug_frame   0x0000000000000178       0x68 Source\Tasks\Motor_Left\motor_left.o
+ .debug_frame   0x00000000000001e0       0xa4 Source\Tasks\Message_Sender\message_sender.o
+ .debug_frame   0x0000000000000284       0x30 Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_frame   0x00000000000002b4       0x30 Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_frame   0x00000000000002e4       0x88 Source\Tasks\CAN_relay\can_relay.o
+ .debug_frame   0x000000000000036c       0xb4 Source\Scheduler\Internal\scheduler.o
+ .debug_frame   0x0000000000000420      0x1e8 Source\Scheduler\Internal\log.o
+ .debug_frame   0x0000000000000608       0xc8 Source\Scheduler\Internal\interrupt.o
+ .debug_frame   0x00000000000006d0      0x168 Source\Drivers\Internal\uart.o
+ .debug_frame   0x0000000000000838       0xcc Source\Drivers\Internal\timer.o
+ .debug_frame   0x0000000000000904       0xc0 Source\Drivers\Internal\text_lcd.o
+ .debug_frame   0x00000000000009c4       0x40 Source\Drivers\Internal\spi.o
+ .debug_frame   0x0000000000000a04       0xb4 Source\Drivers\Internal\segment.o
+ .debug_frame   0x0000000000000ab8       0x70 Source\Drivers\Internal\pwm.o
+ .debug_frame   0x0000000000000b28      0x174 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_frame   0x0000000000000c9c       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000cbc       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x0000000000000cdc       0x84 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_frame   0x0000000000000d60       0x30 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_frame   0x0000000000000d90       0x2c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_frame   0x0000000000000dbc       0x28 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .debug_frame   0x0000000000000de4       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .debug_frame   0x0000000000000e04       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .debug_frame   0x0000000000000e24       0x3c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .debug_frame   0x0000000000000e60       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .debug_frame   0x0000000000000e80       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .debug_frame   0x0000000000000ea0       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+
+.debug_loc      0x0000000000000000     0x26c8
+ .debug_loc     0x0000000000000000       0x1f Source\main.o
+ .debug_loc     0x000000000000001f       0x1f Source\Tasks\tasks.o
+ .debug_loc     0x000000000000003e       0x34 Source\Tasks\object_detection\object_detection.o
+ .debug_loc     0x0000000000000072      0x111 Source\Tasks\Motor_Right\motor_right.o
+ .debug_loc     0x0000000000000183       0xf2 Source\Tasks\Motor_Left\motor_left.o
+ .debug_loc     0x0000000000000275      0x1c0 Source\Tasks\Message_Sender\message_sender.o
+ .debug_loc     0x0000000000000435       0x26 Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_loc     0x000000000000045b       0x1f Source\Tasks\CAN_relay\can_relay.o
+ .debug_loc     0x000000000000047a       0xf2 Source\Scheduler\Internal\scheduler.o
+ .debug_loc     0x000000000000056c      0x4c1 Source\Scheduler\Internal\log.o
+ .debug_loc     0x0000000000000a2d       0xa4 Source\Scheduler\Internal\interrupt.o
+ .debug_loc     0x0000000000000ad1      0x447 Source\Drivers\Internal\uart.o
+ .debug_loc     0x0000000000000f18      0x1b9 Source\Drivers\Internal\timer.o
+ .debug_loc     0x00000000000010d1      0x569 Source\Drivers\Internal\text_lcd.o
+ .debug_loc     0x000000000000163a       0x4c Source\Drivers\Internal\spi.o
+ .debug_loc     0x0000000000001686       0xb9 Source\Drivers\Internal\segment.o
+ .debug_loc     0x000000000000173f       0x5b Source\Drivers\Internal\pwm.o
+ .debug_loc     0x000000000000179a      0x2a0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_loc     0x0000000000001a3a       0xbf c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_loc     0x0000000000001af9      0x3cc c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_loc     0x0000000000001ec5      0x2b7 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_loc     0x000000000000217c       0xa5 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_loc     0x0000000000002221       0x6b c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .debug_loc     0x000000000000228c       0x50 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .debug_loc     0x00000000000022dc       0x34 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .debug_loc     0x0000000000002310      0x1a8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .debug_loc     0x00000000000024b8       0xf4 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .debug_loc     0x00000000000025ac       0x8e c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .debug_loc     0x000000000000263a       0x8e c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+
+.debug_pubnames
+                0x0000000000000000     0x37f2
+ .debug_pubnames
+                0x0000000000000000       0x33 Source\main.o
+ .debug_pubnames
+                0x0000000000000033      0x3e0 Source\config.o
+ .debug_pubnames
+                0x0000000000000413      0x3d0 Source\Tasks\tasks.o
+ .debug_pubnames
+                0x00000000000007e3      0x437 Source\Tasks\object_detection\object_detection.o
+ .debug_pubnames
+                0x0000000000000c1a      0x412 Source\Tasks\System_Control\system_control.o
+ .debug_pubnames
+                0x000000000000102c      0x479 Source\Tasks\Read_Enc\read_enc.o
+ .debug_pubnames
+                0x00000000000014a5      0x442 Source\Tasks\Motor_Right\motor_right.o
+ .debug_pubnames
+                0x00000000000018e7      0x429 Source\Tasks\Motor_Left\motor_left.o
+ .debug_pubnames
+                0x0000000000001d10      0x4c9 Source\Tasks\Message_Sender\message_sender.o
+ .debug_pubnames
+                0x00000000000021d9      0x3ef Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_pubnames
+                0x00000000000025c8      0x3f7 Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_pubnames
+                0x00000000000029bf      0x498 Source\Tasks\CAN_relay\can_relay.o
+ .debug_pubnames
+                0x0000000000002e57       0x77 Source\Scheduler\Internal\scheduler.o
+ .debug_pubnames
+                0x0000000000002ece      0x166 Source\Scheduler\Internal\log.o
+ .debug_pubnames
+                0x0000000000003034      0x103 Source\Scheduler\Internal\interrupt.o
+ .debug_pubnames
+                0x0000000000003137       0xf7 Source\Drivers\Internal\uart.o
+ .debug_pubnames
+                0x000000000000322e       0xdd Source\Drivers\Internal\timer.o
+ .debug_pubnames
+                0x000000000000330b       0x96 Source\Drivers\Internal\text_lcd.o
+ .debug_pubnames
+                0x00000000000033a1       0x3a Source\Drivers\Internal\spi.o
+ .debug_pubnames
+                0x00000000000033db       0x7d Source\Drivers\Internal\segment.o
+ .debug_pubnames
+                0x0000000000003458       0x70 Source\Drivers\Internal\pwm.o
+ .debug_pubnames
+                0x00000000000034c8      0x128 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_pubnames
+                0x00000000000035f0       0x1e c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_pubnames
+                0x000000000000360e       0x39 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+ .debug_pubnames
+                0x0000000000003647       0x1d c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_pubnames
+                0x0000000000003664       0x2c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_pubnames
+                0x0000000000003690       0x1f c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_pubnames
+                0x00000000000036af       0x22 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_pubnames
+                0x00000000000036d1       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .debug_pubnames
+                0x00000000000036f1       0x22 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .debug_pubnames
+                0x0000000000003713       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .debug_pubnames
+                0x0000000000003733       0x1f c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .debug_pubnames
+                0x0000000000003752       0x1f c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .debug_pubnames
+                0x0000000000003771       0x21 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .debug_pubnames
+                0x0000000000003792       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .debug_pubnames
+                0x00000000000037b2       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+ .debug_pubnames
+                0x00000000000037d2       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
+
+.debug_aranges  0x0000000000000000      0x7e8
+ .debug_aranges
+                0x0000000000000000       0x28 Source\main.o
+ .debug_aranges
+                0x0000000000000028       0x20 Source\Tasks\tasks.o
+ .debug_aranges
+                0x0000000000000048       0x28 Source\Tasks\object_detection\object_detection.o
+ .debug_aranges
+                0x0000000000000070       0x28 Source\Tasks\System_Control\system_control.o
+ .debug_aranges
+                0x0000000000000098       0x28 Source\Tasks\Read_Enc\read_enc.o
+ .debug_aranges
+                0x00000000000000c0       0x40 Source\Tasks\Motor_Right\motor_right.o
+ .debug_aranges
+                0x0000000000000100       0x38 Source\Tasks\Motor_Left\motor_left.o
+ .debug_aranges
+                0x0000000000000138       0x40 Source\Tasks\Message_Sender\message_sender.o
+ .debug_aranges
+                0x0000000000000178       0x28 Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_aranges
+                0x00000000000001a0       0x28 Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_aranges
+                0x00000000000001c8       0x50 Source\Tasks\CAN_relay\can_relay.o
+ .debug_aranges
+                0x0000000000000218       0x50 Source\System\startup.o
+ .debug_aranges
+                0x0000000000000268       0x40 Source\Scheduler\Internal\scheduler.o
+ .debug_aranges
+                0x00000000000002a8       0xb0 Source\Scheduler\Internal\log.o
+ .debug_aranges
+                0x0000000000000358       0x70 Source\Scheduler\Internal\interrupt.o
+ .debug_aranges
+                0x00000000000003c8       0x78 Source\Drivers\Internal\uart.o
+ .debug_aranges
+                0x0000000000000440       0x70 Source\Drivers\Internal\timer.o
+ .debug_aranges
+                0x00000000000004b0       0x50 Source\Drivers\Internal\text_lcd.o
+ .debug_aranges
+                0x0000000000000500       0x30 Source\Drivers\Internal\spi.o
+ .debug_aranges
+                0x0000000000000530       0x40 Source\Drivers\Internal\segment.o
+ .debug_aranges
+                0x0000000000000570       0x40 Source\Drivers\Internal\pwm.o
+ .debug_aranges
+                0x00000000000005b0       0xb8 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_aranges
+                0x0000000000000668       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_aranges
+                0x0000000000000688       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_aranges
+                0x00000000000006a8       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_aranges
+                0x00000000000006c8       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_aranges
+                0x00000000000006e8       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_aranges
+                0x0000000000000708       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+ .debug_aranges
+                0x0000000000000728       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+ .debug_aranges
+                0x0000000000000748       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x0000000000000768       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+ .debug_aranges
+                0x0000000000000788       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+ .debug_aranges
+                0x00000000000007a8       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x00000000000007c8       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+
+.debug_ranges   0x0000000000000000      0xf38
+ .debug_ranges  0x0000000000000000       0x20 Source\main.o
+ .debug_ranges  0x0000000000000020       0x18 Source\Tasks\tasks.o
+ .debug_ranges  0x0000000000000038       0x20 Source\Tasks\object_detection\object_detection.o
+ .debug_ranges  0x0000000000000058       0xe8 Source\Tasks\System_Control\system_control.o
+ .debug_ranges  0x0000000000000140       0x20 Source\Tasks\Read_Enc\read_enc.o
+ .debug_ranges  0x0000000000000160       0x90 Source\Tasks\Motor_Right\motor_right.o
+ .debug_ranges  0x00000000000001f0       0x88 Source\Tasks\Motor_Left\motor_left.o
+ .debug_ranges  0x0000000000000278      0x3a8 Source\Tasks\Message_Sender\message_sender.o
+ .debug_ranges  0x0000000000000620       0x68 Source\Tasks\Flashing_LED\flashing_led.o
+ .debug_ranges  0x0000000000000688       0x20 Source\Tasks\Course_Corrector\course_corrector.o
+ .debug_ranges  0x00000000000006a8       0xb8 Source\Tasks\CAN_relay\can_relay.o
+ .debug_ranges  0x0000000000000760       0x48 Source\System\startup.o
+ .debug_ranges  0x00000000000007a8      0x108 Source\Scheduler\Internal\scheduler.o
+ .debug_ranges  0x00000000000008b0      0x1c8 Source\Scheduler\Internal\log.o
+ .debug_ranges  0x0000000000000a78       0x68 Source\Scheduler\Internal\interrupt.o
+ .debug_ranges  0x0000000000000ae0       0x70 Source\Drivers\Internal\uart.o
+ .debug_ranges  0x0000000000000b50       0xe0 Source\Drivers\Internal\timer.o
+ .debug_ranges  0x0000000000000c30       0xa8 Source\Drivers\Internal\text_lcd.o
+ .debug_ranges  0x0000000000000cd8       0x40 Source\Drivers\Internal\spi.o
+ .debug_ranges  0x0000000000000d18       0x38 Source\Drivers\Internal\segment.o
+ .debug_ranges  0x0000000000000d50       0x38 Source\Drivers\Internal\pwm.o
+ .debug_ranges  0x0000000000000d88       0xb0 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+ .debug_ranges  0x0000000000000e38       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+ .debug_ranges  0x0000000000000e50       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+ .debug_ranges  0x0000000000000e68       0x38 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+ .debug_ranges  0x0000000000000ea0       0x58 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+ .debug_ranges  0x0000000000000ef8       0x18 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+ .debug_ranges  0x0000000000000f10       0x28 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+
+.debug_str      0x0000000000000000     0x2456
+ .debug_str     0x0000000000000000      0x137 Source\main.o
+                                        0x175 (size before relaxing)
+ .debug_str     0x0000000000000137      0x4fb Source\config.o
+                                        0x657 (size before relaxing)
+ .debug_str     0x0000000000000632       0x23 Source\Tasks\tasks.o
+                                        0x597 (size before relaxing)
+ .debug_str     0x0000000000000655       0xe0 Source\Tasks\object_detection\object_detection.o
+                                        0x654 (size before relaxing)
+ .debug_str     0x0000000000000735      0x261 Source\Tasks\System_Control\system_control.o
+                                        0x7e1 (size before relaxing)
+ .debug_str     0x0000000000000996       0xbb Source\Tasks\Read_Enc\read_enc.o
+                                        0x819 (size before relaxing)
+ .debug_str     0x0000000000000a51       0xda Source\Tasks\Motor_Right\motor_right.o
+                                        0x86e (size before relaxing)
+ .debug_str     0x0000000000000b2b       0x78 Source\Tasks\Motor_Left\motor_left.o
+                                        0x83f (size before relaxing)
+ .debug_str     0x0000000000000ba3      0x138 Source\Tasks\Message_Sender\message_sender.o
+                                        0x8ff (size before relaxing)
+ .debug_str     0x0000000000000cdb       0x5c Source\Tasks\Flashing_LED\flashing_led.o
+                                        0x7da (size before relaxing)
+ .debug_str     0x0000000000000d37       0x62 Source\Tasks\Course_Corrector\course_corrector.o
+                                        0x7a9 (size before relaxing)
+ .debug_str     0x0000000000000d99       0xd1 Source\Tasks\CAN_relay\can_relay.o
+                                        0x7ee (size before relaxing)
+ .debug_str     0x0000000000000e6a       0xf4 Source\Scheduler\Internal\scheduler.o
+                                        0x2c2 (size before relaxing)
+ .debug_str     0x0000000000000f5e      0x237 Source\Scheduler\Internal\log.o
+                                        0x42c (size before relaxing)
+ .debug_str     0x0000000000001195      0x11a Source\Scheduler\Internal\interrupt.o
+                                        0x24d (size before relaxing)
+ .debug_str     0x00000000000012af      0x56f Source\Drivers\Internal\uart.o
+                                        0x6de (size before relaxing)
+ .debug_str     0x000000000000181e      0x15a Source\Drivers\Internal\timer.o
+                                        0x2b4 (size before relaxing)
+ .debug_str     0x0000000000001978       0xfd Source\Drivers\Internal\text_lcd.o
+                                        0x281 (size before relaxing)
+ .debug_str     0x0000000000001a75       0x8d Source\Drivers\Internal\spi.o
+                                        0x1a8 (size before relaxing)
+ .debug_str     0x0000000000001b02       0xe2 Source\Drivers\Internal\segment.o
+                                        0x1ff (size before relaxing)
+ .debug_str     0x0000000000001be4       0xd5 Source\Drivers\Internal\pwm.o
+                                        0x1df (size before relaxing)
+ .debug_str     0x0000000000001cb9      0x25a c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libsyscalls.a(syscalls.o)
+                                        0x74d (size before relaxing)
+ .debug_str     0x0000000000001f13       0xae c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-errno.o)
+                                        0x4fe (size before relaxing)
+ .debug_str     0x0000000000001fc1       0xc6 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-impure.o)
+                                        0x516 (size before relaxing)
+ .debug_str     0x0000000000002087       0xc4 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/../../../../mipsel-elf/lib/soft-float\libc.a(lib_a-strcmp.o)
+                                        0x159 (size before relaxing)
+ .debug_str     0x000000000000214b      0x1b6 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_addsub_df.o)
+                                        0x257 (size before relaxing)
+ .debug_str     0x0000000000002301       0x45 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_mul_df.o)
+                                        0x229 (size before relaxing)
+ .debug_str     0x0000000000002346       0x1e c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_si_to_df.o)
+                                        0x1be (size before relaxing)
+ .debug_str     0x0000000000002364        0xa c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_df_to_si.o)
+                                        0x1e7 (size before relaxing)
+ .debug_str     0x0000000000000000      0x183 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_thenan_df.o)
+ .debug_str     0x000000000000236e       0x80 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ucmpdi2.o)
+                                        0x188 (size before relaxing)
+ .debug_str     0x00000000000023ee       0x20 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clzsi2.o)
+                                        0x179 (size before relaxing)
+ .debug_str     0x000000000000240e       0x10 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_pack_df.o)
+                                        0x1e6 (size before relaxing)
+ .debug_str     0x000000000000241e        0xb c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_unpack_df.o)
+                                        0x1c8 (size before relaxing)
+ .debug_str     0x0000000000002429       0x23 c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_lshrdi3.o)
+                                        0x199 (size before relaxing)
+ .debug_str     0x000000000000244c        0xa c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_ashldi3.o)
+                                        0x199 (size before relaxing)
+ .debug_str     0x0000000000000000      0x15c c:/rapidittyde0/plugins/com.ttesystems.tte32.tools.win32_2.4.0/files/bin/../lib/gcc/mipsel-elf/4.4.5/soft-float\libgcc.a(_clz.o)
