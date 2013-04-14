@@ -97,13 +97,13 @@ void Motor_Left_Update(void)
 		case Rt:
 			/* Check the encoder tracker has reached the target count */
 			Left_motor_direction_G = Forwards;
-			Left_motor_speed_G = CRAWL_SPEED-2;
+			Left_motor_speed_G = CRAWL_SPEED-4;
 
 			break;
 		case Bd:
 		case Lf:
 			Left_motor_direction_G = Reverse;
-			Left_motor_speed_G = CRAWL_SPEED-2;
+			Left_motor_speed_G = CRAWL_SPEED-4;
 
 			break;
 		case Stp:
