@@ -32,7 +32,7 @@ For this competition, the functionality of the robot needed to be changed from a
 
 This new task, written solely for the hackathon, takes the sensor readings (which are transmitted via CAN bus from a separate Arduino-based sensor node) and alters a global direction variable, **movement_G** in order to control the movement of the robot.
 
-The two motor control tasks, **Motor_Left/** and **Motor_Right/** use this global direction to decide on the speed and direction for their respective motors.
+The two motor control tasks, *Motor_Left/* and *Motor_Right/* use this global direction to decide on the speed and direction for their respective motors.
 
 The robot now behaves in the following way (highly simplified):
 
