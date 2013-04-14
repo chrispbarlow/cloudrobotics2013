@@ -98,6 +98,7 @@ void object_detection_Update(void)
 		lastAvoidance = AVOID_L;
 		if((sensorReadings.IRLeft >= IR_MIN) && (sensorReadings.USFwd >= US_MIN))
 		{
+			stop = 0;
 			avoidance = WAIT;
 		}
 		break;
@@ -106,6 +107,7 @@ void object_detection_Update(void)
 		lastAvoidance = AVOID_R;
 		if((sensorReadings.IRRight >= IR_MIN) && (sensorReadings.USFwd >= US_MIN))
 		{
+			stop = 0;
 			avoidance = WAIT;
 		}
 		break;
