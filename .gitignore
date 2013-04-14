@@ -1,1 +1,19 @@
 Docs/~$RCAN.xlsx
+.cproject
+.settings/com.ttesystems.rapiditty.prefs
+.project
+Arduino/RMeRT/libraries/.DS_Store
+Arduino/RMeRT/libraries/CAN/.DS_Store
+Arduino/RMeRT/libraries/SRF02/.DS_Store
+Arduino/RMeRT/libraries/SRF02/CHANGELOG.txt
+Arduino/RMeRT/libraries/SRF02/LICENSE.txt
+Arduino/RMeRT/libraries/SRF02/README.txt
+Arduino/RMeRT/libraries/SRF02/keywords.txt
+Arduino/RMeRT/libraries/SRF02/version.txt
+Listings/Eurobot2012.lst
+Listings/Eurobot2012.map
+Listings/Telemetrons_CloudRobotics2013.lst
+Listings/Telemetrons_CloudRobotics2013.map
+Project Settings
+Scripts/linker_script.ld
+Static Analysis
